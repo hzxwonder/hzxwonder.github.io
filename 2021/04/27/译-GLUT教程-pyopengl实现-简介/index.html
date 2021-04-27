@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>First Blog | hzxwonder的博客园</title>
+  <title>译-GLUT教程-pyopengl实现-简介 | hzxwonder的博客园</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这是我的第一个博客">
+  <meta name="description" content="原地址：[GLUT Tutorial](! http:&#x2F;&#x2F;www.lighthouse3d.com&#x2F;tutorials&#x2F;glut-tutorial&#x2F;)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="First Blog">
-<meta property="og:url" content="http://example.com/2021/04/26/First-Blog/index.html">
+<meta property="og:title" content="译-GLUT教程-pyopengl实现-简介">
+<meta property="og:url" content="http://example.com/2021/04/27/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-%E7%AE%80%E4%BB%8B/index.html">
 <meta property="og:site_name" content="hzxwonder的博客园">
-<meta property="og:description" content="这是我的第一个博客">
+<meta property="og:description" content="原地址：[GLUT Tutorial](! http:&#x2F;&#x2F;www.lighthouse3d.com&#x2F;tutorials&#x2F;glut-tutorial&#x2F;)">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-04-26T06:59:33.000Z">
-<meta property="article:modified_time" content="2021-04-26T06:59:48.665Z">
+<meta property="article:published_time" content="2021-04-27T05:20:30.000Z">
+<meta property="article:modified_time" content="2021-04-27T05:36:46.977Z">
 <meta property="article:author" content="hzxwonder">
+<meta property="article:tag" content="GLUT">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="hzxwonder的博客园" type="application/atom+xml">
@@ -164,27 +165,35 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-First-Blog" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-译-GLUT教程-pyopengl实现-简介" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      First Blog
+      译-GLUT教程-pyopengl实现-简介
     </h1>
   
 
         
-        <a href="/2021/04/26/First-Blog/" class="archive-article-date">
-  	<time datetime="2021-04-26T06:59:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-26</time>
+        <a href="/2021/04/27/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-%E7%AE%80%E4%BB%8B/" class="archive-article-date">
+  	<time datetime="2021-04-27T05:20:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="这是我的第一个博客"><a href="#这是我的第一个博客" class="headerlink" title="这是我的第一个博客"></a>这是我的第一个博客</h1>
+        <p>原地址：[GLUT Tutorial](! <a target="_blank" rel="noopener" href="http://www.lighthouse3d.com/tutorials/glut-tutorial/">http://www.lighthouse3d.com/tutorials/glut-tutorial/</a>)</p>
+<span id="more"></span>
+
+<p>​    GLUT即OpenGL Utility Toolkit。 马克·J·基尔加德（Mark J. Kilgard）实现了它，以使OpenGL应用程序的构建真正与window系统无关。 多亏了GLUT，我们可以编写应用程序而无需了解X窗口或Microsoft自己的window系统。 Kilgard为X Windows实现了该版本，后来Nate Robins将其移植到Microsoft Windows。 多亏了这两两个人，我们才能如此方便地使用GLUT。</p>
+<p>​    使用GLUT，仅用5行代码就可以打开OpenGL渲染窗口。 仅通过3或4行代码，就可以在你的应用程序中使用键盘和鼠标。 GLUT能使事情变得简单，因此使用GLUT能够非常有效地学习和构建小型应用程序。 尽管GLUT不再得到维护，但它仍然可以达到其目的。</p>
+<p>​    GLUT发行版附带了很多示例，因此在阅读了此处的基础知识之后，您将获得大量的内容。 </p>
+<p>​    在本教程中，我将向您介绍使用GLUT构建应用程序的基础知识。 本教程不会介绍花哨的视觉效果，以使代码尽可能简单。 我将使用OpenGL 2.0，因为它要简单得多，并且避免使本教程的核心主题GLUT复杂化。</p>
+<p>​    GLUT有开源版本，例如freeGLUT和OpenGLUT。 他们都保留了API，因此本教程中显示的内容的99.9％仍然有效。 尽管如此，这些新版本确实具有一些扩展，值得一试。 </p>
+
       
 
       
@@ -213,7 +222,29 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">GLUT</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/GLUT//" class="article-tag-list-link color5">GLUT</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -263,7 +294,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/26/First-Blog/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/27/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-%E7%AE%80%E4%BB%8B/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -277,18 +308,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/04/26/Typora%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Typora学习笔记
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/04/26/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2021/04/26/CSS/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -315,7 +337,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%99%E6%98%AF%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2"><span class="toc-number">1.</span> <span class="toc-text">这是我的第一个博客</span></a></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>
