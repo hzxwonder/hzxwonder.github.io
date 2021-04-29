@@ -16,7 +16,7 @@
 <meta property="og:description" content="原地址：Preparing the window for a reshape">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-28T05:44:23.000Z">
-<meta property="article:modified_time" content="2021-04-28T05:54:50.395Z">
+<meta property="article:modified_time" content="2021-04-29T12:12:27.292Z">
 <meta property="article:author" content="hzxwonder">
 <meta property="article:tag" content="GLUT">
 <meta name="twitter:card" content="summary">
@@ -188,12 +188,12 @@
         <p>原地址：<a target="_blank" rel="noopener" href="http://www.lighthouse3d.com/tutorials/glut-tutorial/preparing-the-window-for-a-reshape/">Preparing the window for a reshape</a></p>
 <span id="more"></span>
 
-<p>​    运行你刚刚创建的程序。 你会看到两个窗口：控制台窗口和OpenGL窗口。 现在调整窗口大小，以使高度不再与宽度匹配。你会看见三角形发生了变形。发生这种情况是因为我们没有正确设置透视。 默认情况下，透视假定宽高比为1，并进行相应绘制。 因此，当比率改变时，透视结果会失真。所以，每次比率改变时，都需要重新计算视角。</p>
+<p>　　运行你刚刚创建的程序。 你会看到两个窗口：控制台窗口和OpenGL窗口。 现在调整窗口大小，以使高度不再与宽度匹配。你会看见三角形发生了变形。发生这种情况是因为我们没有正确设置透视。 默认情况下，透视假定宽高比为1，并进行相应绘制。 因此，当比率改变时，透视结果会失真。所以，每次比率改变时，都需要重新计算视角。</p>
 <blockquote>
 <p>如果是pyopengl则不会有控制台窗口</p>
 </blockquote>
-<p>​    GLUT提供了一种方法来定义在调整窗口大小时应调用哪个函数，即注册用于重新计算透视的回调函数。 此外，在最初创建窗口时也会调用此函数，因此，即使你最初使用的窗口不是正方形，也会看起来不错。</p>
-<p>​    当你调用glutReshapeFunc时，GLUT将注册回调函数。</p>
+<p>　　GLUT提供了一种方法来定义在调整窗口大小时应调用哪个函数，即注册用于重新计算透视的回调函数。 此外，在最初创建窗口时也会调用此函数，因此，即使你最初使用的窗口不是正方形，也会看起来不错。</p>
+<p>　　当你调用glutReshapeFunc时，GLUT将注册回调函数。</p>
 <hr>
 <p>glutReshapeFunc(func)</p>
 <p>参数：</p>
