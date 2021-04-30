@@ -16,7 +16,7 @@
 <meta property="og:description" content="原地址：Preparing the window for a reshape">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-28T05:44:23.000Z">
-<meta property="article:modified_time" content="2021-04-29T12:51:12.223Z">
+<meta property="article:modified_time" content="2021-04-30T07:11:09.727Z">
 <meta property="article:author" content="hzxwonder">
 <meta property="article:tag" content="GLUT">
 <meta name="twitter:card" content="summary">
@@ -188,7 +188,7 @@
         <p>原地址：<a target="_blank" rel="noopener" href="http://www.lighthouse3d.com/tutorials/glut-tutorial/preparing-the-window-for-a-reshape/">Preparing the window for a reshape</a></p>
 <span id="more"></span>
 
-<p>​                运行你刚刚创建的程序。 你会看到两个窗口：控制台窗口和OpenGL窗口。 现在调整窗口大小，以使高度不再与宽度匹配。你会看见三角形发生了变形。发生这种情况是因为我们没有正确设置透视。 默认情况下，透视假定宽高比为1，并进行相应绘制。 因此，当比率改变时，透视结果会失真。所以，每次比率改变时，都需要重新计算视角。</p>
+<p>​        运行你刚刚创建的程序。 你会看到两个窗口：控制台窗口和OpenGL窗口。 现在调整窗口大小，以使高度不再与宽度匹配。你会看见三角形发生了变形。发生这种情况是因为我们没有正确设置透视。 默认情况下，透视假定宽高比为1，并进行相应绘制。 因此，当比率改变时，透视结果会失真。所以，每次比率改变时，都需要重新计算视角。</p>
 <blockquote>
 <p>如果是pyopengl则不会有控制台窗口</p>
 </blockquote>
@@ -210,7 +210,8 @@
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">changeSize</span>(<span class="params">w, h</span>):</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># Prevent a divide by zero, when window is too short</span></span><br><span class="line">    <span class="comment"># (you can&#x27;t make a window of zero width).</span></span><br><span class="line">    <span class="keyword">if</span>(h == <span class="number">0</span>):</span><br><span class="line">        h = <span class="number">1</span></span><br><span class="line">    ratio = <span class="number">1.0</span>* w / h</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Use the Projection Matrix</span></span><br><span class="line">    glMatrixMode(GL_PROJECTION)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Reset Matrix</span></span><br><span class="line">    glLoadIdentity()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Set the viewport to be the entire window</span></span><br><span class="line">    glViewport(<span class="number">0</span>, <span class="number">0</span>, w, h)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Set the correct perspective.</span></span><br><span class="line">    gluPerspective(<span class="number">45</span>,ratio,<span class="number">1</span>,<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Get Back to the Modelview</span></span><br><span class="line">    glMatrixMode(GL_MODELVIEW)</span><br></pre></td></tr></table></figure>
 
-<p>​                我们在这段代码中介绍了一些功能，因此让我们在这里进行一些详细介绍，然后再完全迷失方向。 第一步是计算宽度和高度之间的比率。 请注意，为了正确执行此操作，我们必须注意窗口高度实际上为零的情况，以防止被零除。</p>
+<p>​    我们在这段代码中新增了一些函数，所以需要进行一些必要的详细介绍，防止读者看不懂。 第一步是计算宽度和高度之间的比率。 请注意，为了正确执行此操作，我们必须考虑到窗口高度实际为零的情况，以防被零除。</p>
+<p>​    然后，我们将当前矩阵设置为投影矩阵。 这是定义视锥的矩阵。 接着，我们加载单位矩阵以对其进行初始化。 然后，使用glViewport函数将视口设置为整个窗口。 您可以尝试使用不同的值来查看所得到的结果，前两个参数是左下角的坐标值，后两个参数是视口的宽度和高度。 请注意，这些坐标是相对于窗口而不是屏幕。如果您尝试使用其他值，请不要忘记上面计算的比率也应该使用新的宽度和高度值。</p>
 
       
 
@@ -257,7 +258,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/GLUT//" class="article-tag-list-link color5">GLUT</a>
+        			<a href="/categories/pyopengl//" class="article-tag-list-link color4">pyopengl</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/pyopengl/GLUT//" class="article-tag-list-link color5">GLUT</a>
         		</li>
       		
 		</ul>
@@ -325,6 +330,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2021/04/30/pyopengl%E8%B8%A9%E5%9D%91%E4%B9%8B%E8%B7%AF/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          pyopengl踩坑之路
+        
+      </div>
+    </a>
   
   
     <a href="/2021/04/27/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-(%E4%BA%8C)%E5%88%9D%E5%A7%8B%E5%8C%96/" id="article-nav-older" class="article-nav-link-wrap">
@@ -490,6 +504,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">GLUT</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">pyopengl</a>
               </li>
             
             <div class="clearfix"></div>
