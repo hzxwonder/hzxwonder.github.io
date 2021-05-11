@@ -162,6 +162,91 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-acwing基础算法课笔记-一" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/">acwing基础算法课笔记 一</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/" class="archive-article-date">
+  	<time datetime="2021-05-11T01:21:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>链接地址：<a target="_blank" rel="noopener" href="https://www.acwing.com/video/10/">第一章 基础算法（一）</a></p>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-pyopengl踩坑之路" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -182,7 +267,29 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <ol>
+<li>glutSwapBuffers与glutInitDisplayMode(GLUT_DOUBLE)相搭配；glFlush与glutInitDisplayMode(GLUT_SINGLE)相搭配</li>
+</ol>
+<blockquote>
+<p>GLUT_DOUBLE+glFlush会白屏显示</p>
+<p>GLUT_SINGLE+glutSwapBuffers可以正常显示</p>
+</blockquote>
+<blockquote>
+<p>为什么？</p>
+</blockquote>
+<ol start="2">
+<li>glBegin与glEnd中只允许执行顶点绘制函数？</li>
+</ol>
+<blockquote>
+<p>若出现其他函数，则会报错</p>
+</blockquote>
+<blockquote>
+<p>为每个顶点着色，glColor3f要在glVertex3f之前设置，否则有一个顶点将为白色！</p>
+</blockquote>
+<blockquote>
+<p>若只要实现图形着色，则glColor3f在glBegin之前设置即可。</p>
+</blockquote>
+
       
 
       
@@ -207,11 +314,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/pyopengl//" class="article-tag-list-link color4">pyopengl</a>
+        			<a href="/categories/踩坑//" class="article-tag-list-link color3">踩坑</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/pyopengl/GLUT//" class="article-tag-list-link color5">GLUT</a>
+        			<a href="/categories/踩坑/pyopengl//" class="article-tag-list-link color4">pyopengl</a>
         		</li>
       		
 		</ul>
@@ -943,91 +1050,6 @@
 
 
   
-    <article id="post-Typora学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/26/Typora%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Typora学习笔记</a>
-    </h1>
-  
-
-        
-        <a href="/2021/04/26/Typora%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2021-04-26T08:25:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>这是Typora的学习笔记</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Typora</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Typora//" class="article-tag-list-link color2">Typora</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/04/26/Typora%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1152,6 +1174,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">pyopengl</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
               </li>
             
             <div class="clearfix"></div>
