@@ -273,20 +273,14 @@
 <blockquote>
 <p>GLUT_DOUBLE+glFlush会白屏显示</p>
 <p>GLUT_SINGLE+glutSwapBuffers可以正常显示</p>
-</blockquote>
-<blockquote>
 <p>为什么？</p>
 </blockquote>
-<ol start="2">
+<ol>
 <li>glBegin与glEnd中只允许执行顶点绘制函数？</li>
 </ol>
 <blockquote>
 <p>若出现其他函数，则会报错</p>
-</blockquote>
-<blockquote>
 <p>为每个顶点着色，glColor3f要在glVertex3f之前设置，否则有一个顶点将为白色！</p>
-</blockquote>
-<blockquote>
 <p>若只要实现图形着色，则glColor3f在glBegin之前设置即可。</p>
 </blockquote>
 
@@ -1170,14 +1164,6 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Typora</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">微信小程序</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
@@ -1190,7 +1176,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">GLUT</a>
+                <a href="javascript:void(0)" class="js-tag color2">Typora</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1198,7 +1188,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">算法</a>
+                <a href="javascript:void(0)" class="js-tag color1">微信小程序</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">GLUT</a>
               </li>
             
             <div class="clearfix"></div>
