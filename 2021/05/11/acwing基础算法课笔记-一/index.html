@@ -18,7 +18,7 @@
 <meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/快排.png">
 <meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/二分.png">
 <meta property="article:published_time" content="2021-05-11T01:21:09.000Z">
-<meta property="article:modified_time" content="2021-05-17T03:43:34.753Z">
+<meta property="article:modified_time" content="2021-05-17T04:07:29.339Z">
 <meta property="article:author" content="hzxwonder">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -202,8 +202,7 @@
 <p>​    快排第一层递归，两个指针l,r分别从左右两端出发直至相遇，所用时间复杂度为O(n)，将数组分成了a1,a2两段；</p>
 <p>​    快排的第二层递归，左半边的两个指针分别从a1左右两端出发直至相遇，所用时间复杂度为O(n/2);同理，右半边亦然，时间复杂度为O(n/2)，故快排的第二层递归所用时间复杂度也为O(n)。</p>
 <p>​    故快排的时间复杂度取决于递归的层数，当递归层数为log2n时，即每一层递归，都能将所有区间一分为二，快排的时间复杂度最优，为O(nlogn)，而当递归层数为n时，快排的时间复杂度最差，为O($n^2$)。</p>
-<script type="math/tex; mode=display">
-COP = \frac{Q_{CoolingCircuits}}{P_{CoolingCircuits}}</script></blockquote>
+</blockquote>
 <h3 id="2-归并排序-–分治"><a href="#2-归并排序-–分治" class="headerlink" title="2. 归并排序 –分治"></a>2. 归并排序 –分治</h3><ul>
 <li>确定分界点 mid = ( l + r ) // 2</li>
 <li>递归排序左半边和右半边</li>
