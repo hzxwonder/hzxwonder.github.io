@@ -54,7 +54,6 @@ category-all-page {
     position: absolute;
     right: 5px;
     top: 5px;
-    left: 5px;
     cursor: pointer;
     background-color: #515151;
     border: none;
@@ -63,18 +62,18 @@ category-all-page {
     -ms-user-select: none;
     user-select: none;
     -webkit-appearance: none;
-    font-size: 8px;
+    font-size: 6px;
     font-weight: 70;
-    line-height: 20px;
+    line-height: 16px;
     color: #d5d5d5;
     -webkit-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
-    padding: 2px 2px;
+/*    padding: 2px 2px;*/
 }
 
 .btn-copy span {
-    margin-left: 250px
+    margin-left: 0px
 }
 
 .code-wrapper .btn-copy:hover {
