@@ -70,7 +70,7 @@ category-all-page {
     -webkit-transition: opacity .3s ease-in-out;
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
-    padding: 2px 6px;
+    padding: 2px 2px;
 }
 
 .btn-copy span {
