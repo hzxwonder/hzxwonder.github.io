@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>译-GLUT教程-pyopengl实现-(三)重设窗口大小 | hzxwonder的博客园</title>
+  <title>postgresql常用操作命令 | hzxwonder的博客园</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="原地址：Preparing the window for a reshape">
+  <meta name="description" content="为了应付数据库的上机考试，特地做了这一个整合资源，有需自取。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="译-GLUT教程-pyopengl实现-(三)重设窗口大小">
-<meta property="og:url" content="http://example.com/2021/04/28/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-(%E4%B8%89)%E9%87%8D%E8%AE%BE%E7%AA%97%E5%8F%A3%E5%A4%A7%E5%B0%8F/index.html">
+<meta property="og:title" content="postgresql常用操作命令">
+<meta property="og:url" content="http://example.com/2021/05/18/postgresql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="hzxwonder的博客园">
-<meta property="og:description" content="原地址：Preparing the window for a reshape">
+<meta property="og:description" content="为了应付数据库的上机考试，特地做了这一个整合资源，有需自取。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-04-28T05:44:23.000Z">
-<meta property="article:modified_time" content="2021-04-30T08:02:13.663Z">
+<meta property="article:published_time" content="2021-05-18T01:22:35.000Z">
+<meta property="article:modified_time" content="2021-05-18T03:20:10.277Z">
 <meta property="article:author" content="hzxwonder">
-<meta property="article:tag" content="GLUT">
+<meta property="article:tag" content="postgresql">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="hzxwonder的博客园" type="application/atom+xml">
@@ -165,55 +165,94 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-译-GLUT教程-pyopengl实现-(三)重设窗口大小" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-postgresql常用操作命令" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      译-GLUT教程-pyopengl实现-(三)重设窗口大小
+      postgresql常用操作命令
     </h1>
   
 
         
-        <a href="/2021/04/28/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-(%E4%B8%89)%E9%87%8D%E8%AE%BE%E7%AA%97%E5%8F%A3%E5%A4%A7%E5%B0%8F/" class="archive-article-date">
-  	<time datetime="2021-04-28T05:44:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-28</time>
+        <a href="/2021/05/18/postgresql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" class="archive-article-date">
+  	<time datetime="2021-05-18T01:22:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>原地址：<a target="_blank" rel="noopener" href="http://www.lighthouse3d.com/tutorials/glut-tutorial/preparing-the-window-for-a-reshape/">Preparing the window for a reshape</a></p>
+        <p> 为了应付数据库的上机考试，特地做了这一个整合资源，有需自取。</p>
 <span id="more"></span>
-<p>​        运行你刚刚创建的程序。 你会看到两个窗口：控制台窗口和OpenGL窗口。 现在调整窗口大小，以使高度不再与宽度匹配。你会看见三角形发生了变形。发生这种情况是因为我们没有正确设置透视。 默认情况下，透视假定宽高比为1，并进行相应绘制。 因此，当比率改变时，透视结果会失真。所以，每次比率改变时，都需要重新计算视角。</p>
-<blockquote>
-<p>如果是pyopengl则不会有控制台窗口</p>
-</blockquote>
-<p>​                GLUT提供了一种方法来定义在调整窗口大小时应调用哪个函数，即注册用于重新计算透视的回调函数。 此外，在最初创建窗口时也会调用此函数，因此，即使你最初使用的窗口不是正方形，也会看起来不错。</p>
-<p>​                当你调用glutReshapeFunc时，GLUT将注册回调函数。</p>
-<hr>
-<p>glutReshapeFunc(func)</p>
-<p>参数：</p>
+<h2 id="数据库-PPT-第三章"><a href="#数据库-PPT-第三章" class="headerlink" title="数据库 PPT 第三章"></a>数据库 PPT 第三章</h2><h3 id="1-创建-P17"><a href="#1-创建-P17" class="headerlink" title="1. 创建 P17"></a>1. 创建 P17</h3><figure class="highlight postgresql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> 数据库名;</span><br></pre></td></tr></table></figure>
 <ul>
-<li>func — 调整窗口函数，func(width:int,height:int)</li>
+<li>数据库名不用加引号</li>
 </ul>
-<hr>
-<p>​                因此，我们必须做的是回到上一节中定义的main函数，并添加一个对glutReshapeFunc的回调函数。假设窗口调整的函数名为changeSize。则添加了对glutReshapeFunc调用的main函数代码为：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="comment">#init GLUT and create window</span></span><br><span class="line">    glutInit()</span><br><span class="line">    glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA)</span><br><span class="line">    glutInitWindowPosition(<span class="number">100</span>,<span class="number">100</span>)</span><br><span class="line">    glutInitWindowSize(<span class="number">320</span>,<span class="number">320</span>)</span><br><span class="line">    glutCreateWindow(<span class="string">&quot;Lighthouse3D- GLUT Tutorial&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#注册回调函数</span></span><br><span class="line">    glutDisplayFunc(renderScene)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#main函数中的新增条目</span></span><br><span class="line">    glutReshapeFunc(changeSize)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#进入处理循环</span></span><br><span class="line">    glutMainLoop()</span><br></pre></td></tr></table></figure>
-<p>​                我们需要做的下一件事是定义处理透视的函数。根据上述glutReshapeFunc的语法所示，changeSize函数有两个参数，分别是窗口的新宽度和新高度，即没有窗口装饰。</p>
-<blockquote>
-<p>　window decorations是什么？</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">changeSize</span>(<span class="params">w, h</span>):</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># Prevent a divide by zero, when window is too short</span></span><br><span class="line">    <span class="comment"># (you can&#x27;t make a window of zero width).</span></span><br><span class="line">    <span class="keyword">if</span>(h == <span class="number">0</span>):</span><br><span class="line">        h = <span class="number">1</span></span><br><span class="line">    ratio = <span class="number">1.0</span>* w / h</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Use the Projection Matrix</span></span><br><span class="line">    glMatrixMode(GL_PROJECTION)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Reset Matrix</span></span><br><span class="line">    glLoadIdentity()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Set the viewport to be the entire window</span></span><br><span class="line">    glViewport(<span class="number">0</span>, <span class="number">0</span>, w, h)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Set the correct perspective.</span></span><br><span class="line">    gluPerspective(<span class="number">45</span>,ratio,<span class="number">1</span>,<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Get Back to the Modelview</span></span><br><span class="line">    glMatrixMode(GL_MODELVIEW)</span><br></pre></td></tr></table></figure>
-<p>​    我们在这段代码中新增了一些函数，所以需要进行一些必要的详细介绍，防止读者看不懂。 第一步是计算宽度和高度之间的比率。 请注意，为了正确执行此操作，我们必须考虑到窗口高度实际为零的情况，以防被零除。</p>
-<p>​    然后，我们将当前矩阵设置为投影矩阵。 这是定义视锥的矩阵。 接着，我们加载单位矩阵以对其进行初始化。 然后，使用glViewport函数将视口设置为整个窗口。 您可以尝试使用不同的值来查看所得到的结果，前两个参数是左下角的坐标值，后两个参数是视口的宽度和高度。 请注意，这些坐标是相对于窗口而不是屏幕。如果您尝试使用其他值，请不要忘记上面计算的比率也应该使用新的宽度和高度值。</p>
-<blockquote>
-<p>视口可以为整个窗口，也可以为部分窗口，人为指定</p>
-<p>具体参考链接<a target="_blank" rel="noopener" href="https://blog.csdn.net/caoshangpa/article/details/80263354">OpenGL之glViewPort函数的用法</a></p>
-</blockquote>
-
+<h3 id="2-改名-P25"><a href="#2-改名-P25" class="headerlink" title="2. 改名 P25"></a>2. 改名 P25</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER DATABASE 数据库名 RENAME TO 新数据库名;</span><br></pre></td></tr></table></figure>
+<h3 id="3-删除-P27"><a href="#3-删除-P27" class="headerlink" title="3. 删除 P27"></a>3. 删除 P27</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP DATABASE 数据库名;</span><br></pre></td></tr></table></figure>
+<h2 id="数据库表"><a href="#数据库表" class="headerlink" title="数据库表"></a>数据库表</h2><h3 id="1-创建-P29"><a href="#1-创建-P29" class="headerlink" title="1. 创建 P29"></a>1. 创建 P29</h3><p>​    <strong>数据类型 P13</strong></p>
+<ul>
+<li>简单表</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE 表名</span><br><span class="line">(</span><br><span class="line">	var1 char(13) PRIMARY KEY,</span><br><span class="line">    var2 varchar(10) NOT NULL,</span><br><span class="line">    var3 date NOT NULL,</span><br><span class="line">    var4 money NULL,</span><br><span class="line">    var5 char(4) NOT NULL UNIQUE,</span><br><span class="line">    var6 smallint NULL CHECK(var6 IN(a,b,c)),</span><br><span class="line">    var7 char(4) NOT NULL DEFAULT &#x27;dddd&#x27;,</span><br><span class="line">    var8 serial NOT NULL</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>复杂表</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE 表名</span><br><span class="line">(</span><br><span class="line">	var1 char(13) NOT NULL,</span><br><span class="line">    var2 varchar(10) NOT NULL,</span><br><span class="line">    var3 varchar(10) NOT NULL,</span><br><span class="line"></span><br><span class="line">    CONSTRAINT var12_PK PRIMARY KEY(var1,var2),</span><br><span class="line">    CONSTRAINT var3_FK FOREIGN KEY(var3)</span><br><span class="line">    	REFERENCES 外键所属表名(var3)</span><br><span class="line">    ON DELETE CASCADE</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<h3 id="2-修改-P52"><a href="#2-修改-P52" class="headerlink" title="2. 修改 P52"></a>2. 修改 P52</h3><h4 id="1-添加列-P52"><a href="#1-添加列-P52" class="headerlink" title="1. 添加列 P52"></a>1. 添加列 P52</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE 表名 ADD 新列名称 数据类型 完整性约束</span><br><span class="line">ALTER TABLE T ADD var4 char(10) NOT NULL;</span><br></pre></td></tr></table></figure>
+<h4 id="2-删除列或完整性约束-P53"><a href="#2-删除列或完整性约束-P53" class="headerlink" title="2. 删除列或完整性约束 P53"></a>2. 删除列或完整性约束 P53</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE 表名 DROP COLUMN 列名</span><br><span class="line">ALTER TABLE 表名 DROP CONSTRAINT 完整性约束名</span><br></pre></td></tr></table></figure>
+<h4 id="3-修改名称-P53"><a href="#3-修改名称-P53" class="headerlink" title="3.修改名称 P53"></a>3.修改名称 P53</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE 表名 RENAME TO 新表名;</span><br><span class="line">ALTER TABLE 表名 RENAME 原类名 TO 新类名;</span><br></pre></td></tr></table></figure>
+<h4 id="4-修改数据类型-P53"><a href="#4-修改数据类型-P53" class="headerlink" title="4.修改数据类型 P53"></a>4.修改数据类型 P53</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE 表名 ALTER COLUMN 列名 TYPE 新的数据类型;</span><br></pre></td></tr></table></figure>
+<h3 id="3-删除-P57"><a href="#3-删除-P57" class="headerlink" title="3. 删除 P57"></a>3. 删除 P57</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE 表名;</span><br></pre></td></tr></table></figure>
+<h2 id="数据库索引"><a href="#数据库索引" class="headerlink" title="数据库索引"></a>数据库索引</h2><h3 id="1-创建-P62"><a href="#1-创建-P62" class="headerlink" title="1. 创建 P62"></a>1. 创建 P62</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE INDEX 索引名 ON 表名(列名);</span><br></pre></td></tr></table></figure>
+<h3 id="2-修改-P64"><a href="#2-修改-P64" class="headerlink" title="2. 修改 P64"></a>2. 修改 P64</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER INDEX 索引名 修改项</span><br></pre></td></tr></table></figure>
+<h3 id="3-删除-P66"><a href="#3-删除-P66" class="headerlink" title="3. 删除 P66"></a>3. 删除 P66</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP INDEX 索引名</span><br></pre></td></tr></table></figure>
+<h2 id="数据操作"><a href="#数据操作" class="headerlink" title="数据操作"></a>数据操作</h2><h4 id="1-插入-P70"><a href="#1-插入-P70" class="headerlink" title="1. 插入 P70"></a>1. 插入 P70</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO 表名 VALUES(...);</span><br><span class="line">INSERT INTO 表名 VALUES(...);</span><br></pre></td></tr></table></figure>
+<h4 id="2-更新-P75"><a href="#2-更新-P75" class="headerlink" title="2. 更新 P75"></a>2. 更新 P75</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">UPDATE 表名/视图名</span><br><span class="line">SET 列名1=表达式1,列名2=表达式2...</span><br><span class="line">WHERE 条件表达式;</span><br></pre></td></tr></table></figure>
+<h4 id="3-删除-P78"><a href="#3-删除-P78" class="headerlink" title="3. 删除 P78"></a>3. 删除 P78</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DELETE</span><br><span class="line">FROM 表名/视图名</span><br><span class="line">WHERE 条件表达式</span><br></pre></td></tr></table></figure>
+<h4 id="4-查询-P82"><a href="#4-查询-P82" class="headerlink" title="4.  查询 P82"></a>4.  查询 P82</h4><h5 id="1-单表查询"><a href="#1-单表查询" class="headerlink" title="1. 单表查询"></a>1. 单表查询</h5><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT 目标列1 AS A,目标列2 AS B，目标列3 AS C...</span><br><span class="line">FROM 表名</span><br><span class="line">WHERE 条件表达式 AND/OR 条件表达式</span><br><span class="line">ORDER BY 列名 DESC/ASC，列名 DESC/ASC;</span><br></pre></td></tr></table></figure>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/*过滤重复数据*/</span><br><span class="line">SELECT DISTINCT 目标列</span><br><span class="line">FROM 表名;</span><br></pre></td></tr></table></figure>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/*查看全部数据*/</span><br><span class="line">SELECT *</span><br><span class="line">FROM 表名;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>WHERE 表达式见 P95-P102</li>
+<li>内置函数统计见 P109-118</li>
+</ul>
+<h5 id="2-多表查询"><a href="#2-多表查询" class="headerlink" title="2. 多表查询"></a>2. 多表查询</h5><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT 目标列1，目标列2...</span><br><span class="line">FROM 表名1 AS A,表名2 AS B...</span><br><span class="line">WHERE 关联条件</span><br></pre></td></tr></table></figure>
+<ul>
+<li>外连接见P131-135</li>
+</ul>
+<h2 id="权限管理"><a href="#权限管理" class="headerlink" title="权限管理"></a>权限管理</h2><h3 id="1-授权-P138"><a href="#1-授权-P138" class="headerlink" title="1. 授权 P138"></a>1. 授权 P138</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GRANT SELECT,INSERT,UPDATE,DELETE ON 表名 TO &quot;角色名&quot;;</span><br></pre></td></tr></table></figure>
+<h3 id="2-回收-P139"><a href="#2-回收-P139" class="headerlink" title="2. 回收 P139"></a>2. 回收 P139</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">REVOKE SELECT,INSERT,UPDATE,DELETE ON 表名 FROM &quot;角色名&quot;;</span><br></pre></td></tr></table></figure>
+<h3 id="3-拒绝访问-P140"><a href="#3-拒绝访问-P140" class="headerlink" title="3. 拒绝访问 P140"></a>3. 拒绝访问 P140</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DENY SELECT,INSERT,UPDATE,DELETE ON 表名 TO &quot;角色名&quot;;</span><br></pre></td></tr></table></figure>
+<h2 id="视图"><a href="#视图" class="headerlink" title="视图"></a>视图</h2><h3 id="1-创建-P143"><a href="#1-创建-P143" class="headerlink" title="1. 创建 P143"></a>1. 创建 P143</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">CREATE VIEW 视图名 AS</span><br><span class="line">SELECT 列名1,列名2...</span><br><span class="line">FROM 表名1,表名2...</span><br><span class="line">WHERE 条件</span><br><span class="line">ORDER BY 列名;</span><br></pre></td></tr></table></figure>
+<h3 id="2-删除-P147"><a href="#2-删除-P147" class="headerlink" title="2. 删除 P147"></a>2. 删除 P147</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP VIEW 视图名;</span><br></pre></td></tr></table></figure>
+<h3 id="3-查询-P152"><a href="#3-查询-P152" class="headerlink" title="3. 查询 P152"></a>3. 查询 P152</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM 视图名;</span><br></pre></td></tr></table></figure>
+<h2 id="安全管理-PPT-第五章"><a href="#安全管理-PPT-第五章" class="headerlink" title="安全管理 PPT 第五章"></a>安全管理 PPT 第五章</h2><h3 id="1-备份-P54"><a href="#1-备份-P54" class="headerlink" title="1.备份 P54"></a>1.备份 P54</h3><h4 id="1-数据库备份-命令行"><a href="#1-数据库备份-命令行" class="headerlink" title="1. 数据库备份 -命令行"></a>1. 数据库备份 -命令行</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pg_dump -h localhost -U postgres -p 5432 -d 数据库名 -c –C -f 存放路径[如f:\databackup\coursedb.backup]</span><br></pre></td></tr></table></figure>
+<h4 id="2-schema备份-书P191"><a href="#2-schema备份-书P191" class="headerlink" title="2. schema备份 书P191"></a>2. schema备份 书P191</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pg_dump -h localhost -p 5432 -U postgres -n public -f 存放路径[如f:\databackup\schema.sql] 数据库名</span><br></pre></td></tr></table></figure>
+<h4 id="3-数据库表备份"><a href="#3-数据库表备份" class="headerlink" title="3. 数据库表备份"></a>3. 数据库表备份</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pg_dump -h localhost -p 5432 -U postgres -t 表名 -f 存放路径[如f:\databackup\car.sql] 数据库名</span><br></pre></td></tr></table></figure>
+<h3 id="2-恢复数据-P56"><a href="#2-恢复数据-P56" class="headerlink" title="2. 恢复数据  P56"></a>2. 恢复数据  P56</h3><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">psql -h localhost -U postgres -p 5432 -f 之前数据库的存放路径[如f:\databackup\coursedb.backup]</span><br></pre></td></tr></table></figure>
+<h3 id="3-用户-P115"><a href="#3-用户-P115" class="headerlink" title="3. 用户 P115"></a>3. 用户 P115</h3><h4 id="1-创建"><a href="#1-创建" class="headerlink" title="1. 创建"></a>1. 创建</h4><ul>
+<li>普通用户</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">CREATE USER &quot;用户名&quot; WITH</span><br><span class="line">    LOGIN</span><br><span class="line">    NOSUPERUSER</span><br><span class="line">    NOCREATEDB</span><br><span class="line">    NOCREATEROLE</span><br><span class="line">    INHERIT</span><br><span class="line">    NOREPLICATION</span><br><span class="line">    CONNECTION LIMIT -1</span><br><span class="line">    PASSWORD &#x27;123456&#x27;;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>管理员用户</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">CREATE USER &quot;用户名&quot; WITH</span><br><span class="line">    LOGIN</span><br><span class="line">    SUPERUSER</span><br><span class="line">    CREATEDB</span><br><span class="line">    CREATEROLE</span><br><span class="line">    INHERIT</span><br><span class="line">    REPLICATION</span><br><span class="line">    CONNECTION LIMIT -1</span><br><span class="line">    PASSWORD &#x27;123456&#x27;;</span><br></pre></td></tr></table></figure>
+<h4 id="2-修改-P118"><a href="#2-修改-P118" class="headerlink" title="2. 修改 P118"></a>2. 修改 P118</h4><ul>
+<li>修改密码</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER &quot;用户名&quot;</span><br><span class="line">	PASSWORD &#x27;11111&#x27;;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改连接数限制</li>
+</ul>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER USER &quot;用户名&quot;</span><br><span class="line">	CONNECTION LIMIT 10;</span><br></pre></td></tr></table></figure>
+<h4 id="3-删除-P121"><a href="#3-删除-P121" class="headerlink" title="3. 删除 P121"></a>3. 删除 P121</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP USER 用户名;</span><br></pre></td></tr></table></figure>
+<h4 id="4-授权-见上方权限管理"><a href="#4-授权-见上方权限管理" class="headerlink" title="4. 授权 见上方权限管理"></a>4. 授权 见上方权限管理</h4><h3 id="4-角色-P127"><a href="#4-角色-P127" class="headerlink" title="4. 角色 P127"></a>4. 角色 P127</h3><h4 id="1-创建-1"><a href="#1-创建-1" class="headerlink" title="1. 创建"></a>1. 创建</h4><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">CREATE USER &quot;角色&quot; WITH</span><br><span class="line">    LOGIN</span><br><span class="line">    SUPERUSER</span><br><span class="line">    CREATEDB</span><br><span class="line">    CREATEROLE</span><br><span class="line">    INHERIT</span><br><span class="line">    REPLICATION</span><br><span class="line">    CONNECTION LIMIT -1</span><br></pre></td></tr></table></figure>
+<h4 id="2-修改-P131"><a href="#2-修改-P131" class="headerlink" title="2. 修改 P131"></a>2. 修改 P131</h4><h4 id="3-授权-见上方权限管理"><a href="#3-授权-见上方权限管理" class="headerlink" title="3. 授权 见上方权限管理"></a>3. 授权 见上方权限管理</h4><h2 id="存储过程-PPT-第六章"><a href="#存储过程-PPT-第六章" class="headerlink" title="存储过程 PPT 第六章"></a>存储过程 PPT 第六章</h2>
       
 
       
@@ -247,7 +286,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">GLUT</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">postgresql</a>
         		</li>
       		
 		</ul>
@@ -259,11 +298,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/pyopengl//" class="article-tag-list-link color4">pyopengl</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/pyopengl/GLUT//" class="article-tag-list-link color5">GLUT</a>
+        			<a href="/categories/数据库//" class="article-tag-list-link color4">数据库</a>
         		</li>
       		
 		</ul>
@@ -318,7 +353,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/28/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-(%E4%B8%89)%E9%87%8D%E8%AE%BE%E7%AA%97%E5%8F%A3%E5%A4%A7%E5%B0%8F/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/18/postgresql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -332,18 +367,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/04/30/pyopengl%E8%B8%A9%E5%9D%91%E4%B9%8B%E8%B7%AF/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          pyopengl踩坑之路
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/04/27/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-(%E4%BA%8C)%E5%88%9D%E5%A7%8B%E5%8C%96/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">译-GLUT教程-pyopengl实现-(二)初始化</div>
+    <a href="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">acwing基础算法课笔记 一</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -370,7 +396,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93-PPT-%E7%AC%AC%E4%B8%89%E7%AB%A0"><span class="toc-number">1.</span> <span class="toc-text">数据库 PPT 第三章</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA-P17"><span class="toc-number">1.1.</span> <span class="toc-text">1. 创建 P17</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%94%B9%E5%90%8D-P25"><span class="toc-number">1.2.</span> <span class="toc-text">2. 改名 P25</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%A0%E9%99%A4-P27"><span class="toc-number">1.3.</span> <span class="toc-text">3. 删除 P27</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8"><span class="toc-number">2.</span> <span class="toc-text">数据库表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA-P29"><span class="toc-number">2.1.</span> <span class="toc-text">1. 创建 P29</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BF%AE%E6%94%B9-P52"><span class="toc-number">2.2.</span> <span class="toc-text">2. 修改 P52</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%B7%BB%E5%8A%A0%E5%88%97-P52"><span class="toc-number">2.2.1.</span> <span class="toc-text">1. 添加列 P52</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%88%A0%E9%99%A4%E5%88%97%E6%88%96%E5%AE%8C%E6%95%B4%E6%80%A7%E7%BA%A6%E6%9D%9F-P53"><span class="toc-number">2.2.2.</span> <span class="toc-text">2. 删除列或完整性约束 P53</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E4%BF%AE%E6%94%B9%E5%90%8D%E7%A7%B0-P53"><span class="toc-number">2.2.3.</span> <span class="toc-text">3.修改名称 P53</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-P53"><span class="toc-number">2.2.4.</span> <span class="toc-text">4.修改数据类型 P53</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%A0%E9%99%A4-P57"><span class="toc-number">2.3.</span> <span class="toc-text">3. 删除 P57</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B4%A2%E5%BC%95"><span class="toc-number">3.</span> <span class="toc-text">数据库索引</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA-P62"><span class="toc-number">3.1.</span> <span class="toc-text">1. 创建 P62</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BF%AE%E6%94%B9-P64"><span class="toc-number">3.2.</span> <span class="toc-text">2. 修改 P64</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%A0%E9%99%A4-P66"><span class="toc-number">3.3.</span> <span class="toc-text">3. 删除 P66</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C"><span class="toc-number">4.</span> <span class="toc-text">数据操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%8F%92%E5%85%A5-P70"><span class="toc-number">4.0.1.</span> <span class="toc-text">1. 插入 P70</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%9B%B4%E6%96%B0-P75"><span class="toc-number">4.0.2.</span> <span class="toc-text">2. 更新 P75</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%88%A0%E9%99%A4-P78"><span class="toc-number">4.0.3.</span> <span class="toc-text">3. 删除 P78</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E6%9F%A5%E8%AF%A2-P82"><span class="toc-number">4.0.4.</span> <span class="toc-text">4.  查询 P82</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%8D%95%E8%A1%A8%E6%9F%A5%E8%AF%A2"><span class="toc-number">4.0.4.1.</span> <span class="toc-text">1. 单表查询</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2"><span class="toc-number">4.0.4.2.</span> <span class="toc-text">2. 多表查询</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86"><span class="toc-number">5.</span> <span class="toc-text">权限管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%8E%88%E6%9D%83-P138"><span class="toc-number">5.1.</span> <span class="toc-text">1. 授权 P138</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%9B%9E%E6%94%B6-P139"><span class="toc-number">5.2.</span> <span class="toc-text">2. 回收 P139</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%8B%92%E7%BB%9D%E8%AE%BF%E9%97%AE-P140"><span class="toc-number">5.3.</span> <span class="toc-text">3. 拒绝访问 P140</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E5%9B%BE"><span class="toc-number">6.</span> <span class="toc-text">视图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA-P143"><span class="toc-number">6.1.</span> <span class="toc-text">1. 创建 P143</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%88%A0%E9%99%A4-P147"><span class="toc-number">6.2.</span> <span class="toc-text">2. 删除 P147</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%9F%A5%E8%AF%A2-P152"><span class="toc-number">6.3.</span> <span class="toc-text">3. 查询 P152</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86-PPT-%E7%AC%AC%E4%BA%94%E7%AB%A0"><span class="toc-number">7.</span> <span class="toc-text">安全管理 PPT 第五章</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%A4%87%E4%BB%BD-P54"><span class="toc-number">7.1.</span> <span class="toc-text">1.备份 P54</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%87%E4%BB%BD-%E5%91%BD%E4%BB%A4%E8%A1%8C"><span class="toc-number">7.1.1.</span> <span class="toc-text">1. 数据库备份 -命令行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-schema%E5%A4%87%E4%BB%BD-%E4%B9%A6P191"><span class="toc-number">7.1.2.</span> <span class="toc-text">2. schema备份 书P191</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E5%A4%87%E4%BB%BD"><span class="toc-number">7.1.3.</span> <span class="toc-text">3. 数据库表备份</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%81%A2%E5%A4%8D%E6%95%B0%E6%8D%AE-P56"><span class="toc-number">7.2.</span> <span class="toc-text">2. 恢复数据  P56</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%94%A8%E6%88%B7-P115"><span class="toc-number">7.3.</span> <span class="toc-text">3. 用户 P115</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA"><span class="toc-number">7.3.1.</span> <span class="toc-text">1. 创建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%BF%AE%E6%94%B9-P118"><span class="toc-number">7.3.2.</span> <span class="toc-text">2. 修改 P118</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%88%A0%E9%99%A4-P121"><span class="toc-number">7.3.3.</span> <span class="toc-text">3. 删除 P121</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E6%8E%88%E6%9D%83-%E8%A7%81%E4%B8%8A%E6%96%B9%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86"><span class="toc-number">7.3.4.</span> <span class="toc-text">4. 授权 见上方权限管理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%A7%92%E8%89%B2-P127"><span class="toc-number">7.4.</span> <span class="toc-text">4. 角色 P127</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA-1"><span class="toc-number">7.4.1.</span> <span class="toc-text">1. 创建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%BF%AE%E6%94%B9-P131"><span class="toc-number">7.4.2.</span> <span class="toc-text">2. 修改 P131</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E6%8E%88%E6%9D%83-%E8%A7%81%E4%B8%8A%E6%96%B9%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86"><span class="toc-number">7.4.3.</span> <span class="toc-text">3. 授权 见上方权限管理</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B-PPT-%E7%AC%AC%E5%85%AD%E7%AB%A0"><span class="toc-number">8.</span> <span class="toc-text">存储过程 PPT 第六章</span></a></li></ol>
                     </div>
                 </span>
             </div>
