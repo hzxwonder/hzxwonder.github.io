@@ -6,20 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>译-GLUT教程-pyopengl实现-(三)重设窗口大小 | hzxwonder的博客园</title>
+  <title>acwing基础算法课笔记-python实现-一 | hzxwonder的博客园</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="原地址：Preparing the window for a reshape">
+  <meta name="description" content="链接地址：第一章 基础算法（一）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="译-GLUT教程-pyopengl实现-(三)重设窗口大小">
-<meta property="og:url" content="http://example.com/2021/04/28/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-(%E4%B8%89)%E9%87%8D%E8%AE%BE%E7%AA%97%E5%8F%A3%E5%A4%A7%E5%B0%8F/index.html">
+<meta property="og:title" content="acwing基础算法课笔记-python实现-一">
+<meta property="og:url" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/index.html">
 <meta property="og:site_name" content="hzxwonder的博客园">
-<meta property="og:description" content="原地址：Preparing the window for a reshape">
+<meta property="og:description" content="链接地址：第一章 基础算法（一）">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-04-28T05:44:23.000Z">
-<meta property="article:modified_time" content="2021-04-30T08:02:13.663Z">
+<meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/快排.png">
+<meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/二分.png">
+<meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/二分.png">
+<meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/二分1.png">
+<meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/二分2.png">
+<meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/二分3.png">
+<meta property="article:published_time" content="2021-05-11T01:21:09.000Z">
+<meta property="article:modified_time" content="2021-05-21T01:29:47.993Z">
 <meta property="article:author" content="hzxwonder">
-<meta property="article:tag" content="GLUT">
+<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/快排.png">
   
     <link rel="alternative" href="/atom.xml" title="hzxwonder的博客园" type="application/atom+xml">
   
@@ -165,54 +172,186 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-译-GLUT教程-pyopengl实现-(三)重设窗口大小" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-acwing基础算法课笔记-python实现-一" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      译-GLUT教程-pyopengl实现-(三)重设窗口大小
+      acwing基础算法课笔记-python实现-一
     </h1>
   
 
         
-        <a href="/2021/04/28/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-(%E4%B8%89)%E9%87%8D%E8%AE%BE%E7%AA%97%E5%8F%A3%E5%A4%A7%E5%B0%8F/" class="archive-article-date">
-  	<time datetime="2021-04-28T05:44:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-28</time>
+        <a href="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/" class="archive-article-date">
+  	<time datetime="2021-05-11T01:21:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>原地址：<a target="_blank" rel="noopener" href="http://www.lighthouse3d.com/tutorials/glut-tutorial/preparing-the-window-for-a-reshape/">Preparing the window for a reshape</a></p>
+        <p>链接地址：<a target="_blank" rel="noopener" href="https://www.acwing.com/video/10/">第一章 基础算法（一）</a></p>
 <span id="more"></span>
-<p>​        运行你刚刚创建的程序。 你会看到两个窗口：控制台窗口和OpenGL窗口。 现在调整窗口大小，以使高度不再与宽度匹配。你会看见三角形发生了变形。发生这种情况是因为我们没有正确设置透视。 默认情况下，透视假定宽高比为1，并进行相应绘制。 因此，当比率改变时，透视结果会失真。所以，每次比率改变时，都需要重新计算视角。</p>
-<blockquote>
-<p>如果是pyopengl则不会有控制台窗口</p>
-</blockquote>
-<p>​                GLUT提供了一种方法来定义在调整窗口大小时应调用哪个函数，即注册用于重新计算透视的回调函数。 此外，在最初创建窗口时也会调用此函数，因此，即使你最初使用的窗口不是正方形，也会看起来不错。</p>
-<p>​                当你调用glutReshapeFunc时，GLUT将注册回调函数。</p>
-<hr>
-<p>glutReshapeFunc(func)</p>
-<p>参数：</p>
-<ul>
-<li>func — 调整窗口函数，func(width:int,height:int)</li>
+<h2 id="一-算法思想"><a href="#一-算法思想" class="headerlink" title="一 算法思想"></a>一 算法思想</h2><h3 id="1-快速排序"><a href="#1-快速排序" class="headerlink" title="1. 快速排序"></a>1. 快速排序</h3><ul>
+<li>确定分界点 q[l],q[(l+r)/2],q[r]</li>
+<li>调整区间</li>
+<li>递归处理左右两段 </li>
 </ul>
-<hr>
-<p>​                因此，我们必须做的是回到上一节中定义的main函数，并添加一个对glutReshapeFunc的回调函数。假设窗口调整的函数名为changeSize。则添加了对glutReshapeFunc调用的main函数代码为：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="comment">#init GLUT and create window</span></span><br><span class="line">    glutInit()</span><br><span class="line">    glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA)</span><br><span class="line">    glutInitWindowPosition(<span class="number">100</span>,<span class="number">100</span>)</span><br><span class="line">    glutInitWindowSize(<span class="number">320</span>,<span class="number">320</span>)</span><br><span class="line">    glutCreateWindow(<span class="string">&quot;Lighthouse3D- GLUT Tutorial&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#注册回调函数</span></span><br><span class="line">    glutDisplayFunc(renderScene)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#main函数中的新增条目</span></span><br><span class="line">    glutReshapeFunc(changeSize)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#进入处理循环</span></span><br><span class="line">    glutMainLoop()</span><br></pre></td></tr></table></figure>
-<p>​                我们需要做的下一件事是定义处理透视的函数。根据上述glutReshapeFunc的语法所示，changeSize函数有两个参数，分别是窗口的新宽度和新高度，即没有窗口装饰。</p>
 <blockquote>
-<p>　window decorations是什么？</p>
+<p>为什么快速排序的最好时间复杂度为O(nlogn)?</p>
+<p>– 首先我们需要明确一点，快排无论将原数组分成几段区间，每一层的递归对每一段区间的操作时间总和都为O(n)，所以最好的情况是，快排的每一层递归，都能正好将每个区间分成两块，即最少的递归层数为log2n，故快速排序的最好时间复杂度为O(nlogn)。</p>
+<p>– 如下图所示，<img src="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/快排.png" alt="快排"></p>
+<p>　　快排第一层递归，两个指针l,r分别从左右两端出发直至相遇，所用时间复杂度为O(n)，将数组分成了a1,a2两段；</p>
+<p>　　快排的第二层递归，左半边的两个指针分别从a1左右两端出发直至相遇，所用时间复杂度为O(n/2);同理，右半边亦然，时间复杂度为O(n/2)，故快排的第二层递归所用时间复杂度也为O(n)。</p>
+<p>　　故快排的时间复杂度取决于递归的层数，当递归层数为log2n时，即每一层递归，都能将所有区间一分为二，快排的时间复杂度最优，为O(nlogn)，而当递归层数为n时，快排的时间复杂度最差，为O($n^2$)。</p>
 </blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">changeSize</span>(<span class="params">w, h</span>):</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># Prevent a divide by zero, when window is too short</span></span><br><span class="line">    <span class="comment"># (you can&#x27;t make a window of zero width).</span></span><br><span class="line">    <span class="keyword">if</span>(h == <span class="number">0</span>):</span><br><span class="line">        h = <span class="number">1</span></span><br><span class="line">    ratio = <span class="number">1.0</span>* w / h</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Use the Projection Matrix</span></span><br><span class="line">    glMatrixMode(GL_PROJECTION)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Reset Matrix</span></span><br><span class="line">    glLoadIdentity()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Set the viewport to be the entire window</span></span><br><span class="line">    glViewport(<span class="number">0</span>, <span class="number">0</span>, w, h)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Set the correct perspective.</span></span><br><span class="line">    gluPerspective(<span class="number">45</span>,ratio,<span class="number">1</span>,<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Get Back to the Modelview</span></span><br><span class="line">    glMatrixMode(GL_MODELVIEW)</span><br></pre></td></tr></table></figure>
-<p>​    我们在这段代码中新增了一些函数，所以需要进行一些必要的详细介绍，防止读者看不懂。 第一步是计算宽度和高度之间的比率。 请注意，为了正确执行此操作，我们必须考虑到窗口高度实际为零的情况，以防被零除。</p>
-<p>​    然后，我们将当前矩阵设置为投影矩阵。 这是定义视锥的矩阵。 接着，我们加载单位矩阵以对其进行初始化。 然后，使用glViewport函数将视口设置为整个窗口。 您可以尝试使用不同的值来查看所得到的结果，前两个参数是左下角的坐标值，后两个参数是视口的宽度和高度。 请注意，这些坐标是相对于窗口而不是屏幕。如果您尝试使用其他值，请不要忘记上面计算的比率也应该使用新的宽度和高度值。</p>
+<h3 id="2-归并排序-–分治"><a href="#2-归并排序-–分治" class="headerlink" title="2. 归并排序 –分治"></a>2. 归并排序 –分治</h3><ul>
+<li>确定分界点 mid = ( l + r ) // 2</li>
+<li>递归排序左半边和右半边</li>
+<li>归并合二为一，双指针归并</li>
+</ul>
 <blockquote>
-<p>视口可以为整个窗口，也可以为部分窗口，人为指定</p>
-<p>具体参考链接<a target="_blank" rel="noopener" href="https://blog.csdn.net/caoshangpa/article/details/80263354">OpenGL之glViewPort函数的用法</a></p>
+<p>与快排不同，归并排序先递归后归并</p>
 </blockquote>
+<h3 id="3-整数二分"><a href="#3-整数二分" class="headerlink" title="3. 整数二分"></a>3. 整数二分</h3><blockquote>
+<p>目的是为了找到边界</p>
+</blockquote>
+<p>　　刚开始看Y总的视频时对区间的转换一头雾水，不知道为什么要找相反的区间，后来我又看了一遍，知道了二分的“找边界”目的，就很清楚了。</p>
+<p><img src="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/二分.png" alt="二分"></p>
+<p>　　如上图所示，二分的目的其实就是找到ａ和ｂ两个点。当mid满足红色区间要求时，如（1）所示，说明左半边区间都满足，边界不可能在左半边区间，故需要将区间替换成[mid,r];当mid不满足红色区间要求时，如图（2）所示，说明右半边区间都不满足，故边界需要在[l,mid-1]中寻找。</p>
+<p>　　同理，当mid满足绿色区间要求时，如（2）所示，说明右半边区间都满足，边界不可能在右半边区间，故需要将区间替换成[l,mid];当mid不满足绿色区间要求时，如图（1）所示，说明左半边区间都不满足，故边界需要在[r,mid+1]中寻找。</p>
+<ul>
+<li>判断转换后的区间<ul>
+<li>l = mid ===&gt; mid = $\frac{(l+r+1)}{2}$ </li>
+<li>r = mid ===&gt; mid = $\frac{(l+r)}{2}$</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-浮点数二分"><a href="#4-浮点数二分" class="headerlink" title="4. 浮点数二分"></a>4. 浮点数二分</h3><blockquote>
+<p>其实就是夹逼法，通过区间不断缩小来确定值。</p>
+</blockquote>
+<h2 id="二-代码"><a href="#二-代码" class="headerlink" title="二 代码"></a>二 代码</h2><h3 id="1-快速排序-1"><a href="#1-快速排序-1" class="headerlink" title="1. 快速排序"></a>1. 快速排序</h3><ul>
+<li>先来个主函数，处理输入输出</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">   n = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">   num_lst = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">   quick_sort(num_lst,<span class="number">0</span>,n-<span class="number">1</span>)</span><br><span class="line">   <span class="keyword">for</span> ele <span class="keyword">in</span> num_lst:</span><br><span class="line">         <span class="built_in">print</span>(ele,end=<span class="string">&#x27; &#x27;</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>编写快排函数</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">quick_sort</span>(<span class="params">num_lst,l,r</span>):</span></span><br><span class="line">    <span class="keyword">if</span> r &lt;= l:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        i = l - <span class="number">1</span></span><br><span class="line">        j = r + <span class="number">1</span></span><br><span class="line">        num = num_lst[(i+j)//<span class="number">2</span>] <span class="comment">#！！！很重要</span></span><br><span class="line">        <span class="keyword">while</span> i &lt; j:</span><br><span class="line">          i += <span class="number">1</span></span><br><span class="line">          j -= <span class="number">1</span></span><br><span class="line">          <span class="keyword">while</span> num &gt; num_lst[i]:</span><br><span class="line">                i += <span class="number">1</span></span><br><span class="line">          <span class="keyword">while</span> num &lt; num_lst[j]:</span><br><span class="line">                j -= <span class="number">1</span></span><br><span class="line">          <span class="keyword">if</span> i &lt; j:</span><br><span class="line">                num_lst[i],num_lst[j] = num_lst[j],num_lst[i]</span><br><span class="line">        quick_sort(num_lst,l,j)</span><br><span class="line">        quick_sort(num_lst,j+<span class="number">1</span>,r)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>　　之前用Y总的代码一直报RE错误，本以为是递归层数开小了，但开大之后还是报错，直到改成中间值 num = num_lst[ (i+j)//2] 才顺利通过。</p>
+</blockquote>
+<h3 id="２-归并排序"><a href="#２-归并排序" class="headerlink" title="２. 归并排序"></a>２. 归并排序</h3><ul>
+<li>主函数，用来输入输出</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">      n = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">      num_lst = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">      temp = [<span class="number">0</span>] * n</span><br><span class="line">      merge_sort(num_lst,<span class="number">0</span>,n-<span class="number">1</span>)</span><br><span class="line">      <span class="keyword">for</span> ele <span class="keyword">in</span> num_lst:</span><br><span class="line">            <span class="built_in">print</span>(ele,end=<span class="string">&#x27; &#x27;</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>归并函数</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">merge_sort</span>(<span class="params">num_lst,l,r</span>):</span></span><br><span class="line">    <span class="keyword">if</span> l &gt;= r:</span><br><span class="line">        <span class="keyword">return</span> </span><br><span class="line">    mid = (l + r) // <span class="number">2</span></span><br><span class="line">    merge_sort(num_lst,l,mid)</span><br><span class="line">    merge_sort(num_lst,mid+<span class="number">1</span>,r)</span><br><span class="line">    i = l</span><br><span class="line">    j = mid+<span class="number">1</span></span><br><span class="line">    k = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> i &lt;= mid <span class="keyword">and</span> j &lt;= r:</span><br><span class="line">        <span class="keyword">if</span> num_lst[i] &lt;= num_lst[j]:</span><br><span class="line">            temp[k] = num_lst[i]</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">            k += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            temp[k] = num_lst[j]</span><br><span class="line">            j += <span class="number">1</span></span><br><span class="line">            k += <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> i &lt;= mid:</span><br><span class="line">        temp[k] = num_lst[i]</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">        k += <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> j &lt;= r:</span><br><span class="line">        temp[k] = num_lst[j]</span><br><span class="line">        j += <span class="number">1</span></span><br><span class="line">        k += <span class="number">1</span></span><br><span class="line">    num_lst[l:r+<span class="number">1</span>] = temp[<span class="number">0</span>:r-l+<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>　　刚开始将temp数组建在了merge_sort函数中，然后打算通过append和extend来实现，但一直TLE，后来看了题解，将temp置为全局变量，merge_sort函数既不用每次递归建立数组，也可直接通过数组下标改变temp，加快了执行速度，最后能正常通过。</p>
+</blockquote>
+<h3 id="3-逆序对数量-—归并排序"><a href="#3-逆序对数量-—归并排序" class="headerlink" title="3. 逆序对数量 —归并排序"></a>3. 逆序对数量 —归并排序</h3><ul>
+<li>主函数来处理输入输出，记得建立temp数组</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    n = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">    num_lst = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">    temp = [<span class="number">0</span>]*n</span><br><span class="line">    count = merge_sort(num_lst,<span class="number">0</span>,n-<span class="number">1</span>)</span><br><span class="line">    <span class="built_in">print</span>(count)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>逆序对数量求解</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">merge_sort</span>(<span class="params">num_lst,l,r</span>):</span></span><br><span class="line">    <span class="keyword">if</span> l &gt;= r:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    mid = (l + r)//<span class="number">2</span></span><br><span class="line">    <span class="built_in">sum</span> = merge_sort(num_lst,l,mid) + merge_sort(num_lst,mid+<span class="number">1</span>,r)</span><br><span class="line">    i = l</span><br><span class="line">    j = mid+<span class="number">1</span></span><br><span class="line">    k = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> i &lt;= mid <span class="keyword">and</span> j &lt;= r:</span><br><span class="line">        <span class="keyword">if</span> num_lst[i] &lt;= num_lst[j]:</span><br><span class="line">            temp[k] = num_lst[i]</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">            k += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            temp[k] = num_lst[j]</span><br><span class="line">            k += <span class="number">1</span></span><br><span class="line">            j += <span class="number">1</span></span><br><span class="line">            <span class="built_in">sum</span> += mid - i + <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> i &lt;= mid:</span><br><span class="line">        temp[k] = num_lst[i]</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">        k += <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> j &lt;= r:</span><br><span class="line">        temp[k] = num_lst[j]</span><br><span class="line">        j += <span class="number">1</span></span><br><span class="line">        k += <span class="number">1</span></span><br><span class="line">    num_lst[l:r+<span class="number">1</span>] = temp[<span class="number">0</span>:k]</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">sum</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>　　对于两个数组，两个数组里的元素位置如何改变，都不会影响到第一个数组每一个元素与第二个数组里元素的逆序对数量</p>
+<p>　　若num_lst[i] &gt; num_lst[j] ，又因为num_lst[i+1]…num_lst[mid] &gt;= num_lst[i]，故num_lst[j]小于num_lst[i]以后的任意数，故sum +=  mid - i +1</p>
+<p>如数组 5 1 3 4 2</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>迭代次数</th>
+<th>元素分组</th>
+<th>现有逆序对</th>
+<th>总共逆序对 6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>(5,1,3),(4,2)</td>
+<td>无</td>
+<td>(5,1),(5,3),(5,4),(5,2),(3,2),(4,2)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>((5,1),(3)),((4),(2))</td>
+<td>无</td>
+<td>(5,1),(5,3),(5,4),(5,2),(3,2),(4,2)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>((5),(1),(3)),(2,4)</td>
+<td>(4,2) 1</td>
+<td>(5,1),(5,3),(5,4),(5,2),(3,2),(4,2)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>((1,5),(3)),(2,4)</td>
+<td>(4,2),(5,1) 2</td>
+<td>(5,1),(5,3),(5,4),(5,2),(3,2),(4,2)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>(1,3,5),(2,4)</td>
+<td>(4,2),(5,1),(5,3) 3</td>
+<td>(5,1),(5,3),(5,4),(5,2),(3,2),(4,2)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>(1,2,3,4,5)</td>
+<td>(4,2),(5,1),(5,3),(3,2),(5,2),(5,4) 6</td>
+<td>(5,1),(5,3),(5,4),(5,2),(3,2),(4,2)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>　　每一次的合并，只需考虑跨数组的逆序对，因为同一数组里已经排好序。</p>
+</blockquote>
+<h3 id="4-二分"><a href="#4-二分" class="headerlink" title="4. 二分"></a>4. 二分</h3><p>代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">n,q = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">num_lst = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line"> </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(q):</span><br><span class="line">    num = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">    l = <span class="number">0</span></span><br><span class="line">    r = n-<span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> l &lt; r:</span><br><span class="line">        mid = (l+r)//<span class="number">2</span></span><br><span class="line">        <span class="keyword">if</span> num_lst[mid] &gt;= num:</span><br><span class="line">            r = mid</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            l = mid+<span class="number">1</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> num_lst[l] != num:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;-1 -1&#x27;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(l,end=<span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        l = <span class="number">0</span></span><br><span class="line">        r = n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span> l &lt; r:</span><br><span class="line">            mid = (l+r+<span class="number">1</span>)//<span class="number">2</span></span><br><span class="line">            <span class="keyword">if</span> num_lst[mid] &lt;= num:</span><br><span class="line">                l = mid</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                r = mid-<span class="number">1</span></span><br><span class="line">        <span class="built_in">print</span>(l)</span><br></pre></td></tr></table></figure>
+<p>　　刚开始两个while循环写反了，输出结果都是[r,l]，但一直没搞明白为什么要按照如此的顺序，后来画个图就一目了然了。</p>
+<p><img src="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/二分.png" alt="二分"></p>
+<p>　　刚才讨论过，当我们需要求a时，需要满足以下条件：</p>
+<ul>
+<li>当数位于[l,a]区间时满足左半边要求</li>
+<li>当数位于[a+1,r]区间时满足右半边要求</li>
+</ul>
+<p>　　当我们需要求b时，应满足以下条件：</p>
+<ul>
+<li>当数位于[l,b-1]区间时满足左半边要求</li>
+<li>当数位于[b,r]区间时满足右半边要求。</li>
+</ul>
+<p>　　按题目所给的，我们需要求出等于给定数字q的区间，故左边界为满足大于等于q的第一个索引，右边界为满足小于等于q的最后一个索引。如下图所示。</p>
+<p><img src="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/二分1.png" alt="二分"></p>
+<p>　　求左边界时，即求b的值，如下图所示。故判断条件应为：</p>
+<ul>
+<li>num_lst[mid] &gt;= q ==&gt; r = mid</li>
+<li>num_lst[mid] &lt; q ==&gt; l = mid+1</li>
+<li>mid = (l + r)//2</li>
+</ul>
+<p><img src="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/二分2.png" alt="二分"></p>
+<p>求右边界时，即求a的值，如下图所示。故判断条件应为：</p>
+<ul>
+<li>num_lst[mid] &lt;= q ==&gt; l = mid</li>
+<li>num_lst[mid] &gt; q ==&gt; r = mid-1</li>
+<li>mid = (l + r + 1)//2</li>
+</ul>
+<p><img src="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/二分3.png" alt="二分"></p>
+<h3 id="5-浮点二分-–-根号求值"><a href="#5-浮点二分-–-根号求值" class="headerlink" title="5. 浮点二分 – 根号求值"></a>5. 浮点二分 – 根号求值</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">n = <span class="built_in">float</span>(<span class="built_in">input</span>())</span><br><span class="line">l = <span class="number">0</span></span><br><span class="line">r = n+<span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> (r-l &gt; <span class="number">1e-8</span>):</span><br><span class="line">      mid = (l+r)/<span class="number">2.0</span></span><br><span class="line">      <span class="keyword">if</span> mid*mid &gt;= n:</span><br><span class="line">            r = mid</span><br><span class="line">      <span class="keyword">else</span>:</span><br><span class="line">            l = mid</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;%.6f&quot;</span>%l)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>注意右边界要+1，否则无法计算小于1的根号值。</li>
+</ul>
 
       
 
@@ -247,7 +386,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">GLUT</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
         		</li>
       		
 		</ul>
@@ -259,11 +398,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/pyopengl//" class="article-tag-list-link color4">pyopengl</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/pyopengl/GLUT//" class="article-tag-list-link color5">GLUT</a>
+        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
         		</li>
       		
 		</ul>
@@ -318,7 +453,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/28/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-(%E4%B8%89)%E9%87%8D%E8%AE%BE%E7%AA%97%E5%8F%A3%E5%A4%A7%E5%B0%8F/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%B8%80/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -332,18 +467,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/04/30/pyopengl%E8%B8%A9%E5%9D%91%E4%B9%8B%E8%B7%AF/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/05/18/postgresql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          pyopengl踩坑之路
+          postgresql常用操作命令
         
       </div>
     </a>
   
   
-    <a href="/2021/04/27/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-(%E4%BA%8C)%E5%88%9D%E5%A7%8B%E5%8C%96/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">译-GLUT教程-pyopengl实现-(二)初始化</div>
+    <a href="/2021/04/30/pyopengl%E8%B8%A9%E5%9D%91%E4%B9%8B%E8%B7%AF/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">pyopengl踩坑之路</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -370,7 +505,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3"><span class="toc-number">1.</span> <span class="toc-text">一 算法思想</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F"><span class="toc-number">1.1.</span> <span class="toc-text">1. 快速排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F-%E2%80%93%E5%88%86%E6%B2%BB"><span class="toc-number">1.2.</span> <span class="toc-text">2. 归并排序 –分治</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%95%B4%E6%95%B0%E4%BA%8C%E5%88%86"><span class="toc-number">1.3.</span> <span class="toc-text">3. 整数二分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%B5%AE%E7%82%B9%E6%95%B0%E4%BA%8C%E5%88%86"><span class="toc-number">1.4.</span> <span class="toc-text">4. 浮点数二分</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E4%BB%A3%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text">二 代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F-1"><span class="toc-number">2.1.</span> <span class="toc-text">1. 快速排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%92-%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F"><span class="toc-number">2.2.</span> <span class="toc-text">２. 归并排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%80%86%E5%BA%8F%E5%AF%B9%E6%95%B0%E9%87%8F-%E2%80%94%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F"><span class="toc-number">2.3.</span> <span class="toc-text">3. 逆序对数量 —归并排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%BA%8C%E5%88%86"><span class="toc-number">2.4.</span> <span class="toc-text">4. 二分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%B5%AE%E7%82%B9%E4%BA%8C%E5%88%86-%E2%80%93-%E6%A0%B9%E5%8F%B7%E6%B1%82%E5%80%BC"><span class="toc-number">2.5.</span> <span class="toc-text">5. 浮点二分 – 根号求值</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>

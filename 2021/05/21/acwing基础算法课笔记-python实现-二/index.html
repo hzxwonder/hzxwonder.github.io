@@ -6,27 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>acwing基础算法课笔记 一 | hzxwonder的博客园</title>
+  <title>acwing基础算法课笔记-python实现-二 | hzxwonder的博客园</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="链接地址：第一章 基础算法（一）">
+  <meta name="description" content="链接地址：第一章 基础算法（二）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="acwing基础算法课笔记 一">
-<meta property="og:url" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/index.html">
+<meta property="og:title" content="acwing基础算法课笔记-python实现-二">
+<meta property="og:url" content="http://example.com/2021/05/21/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%BA%8C/index.html">
 <meta property="og:site_name" content="hzxwonder的博客园">
-<meta property="og:description" content="链接地址：第一章 基础算法（一）">
+<meta property="og:description" content="链接地址：第一章 基础算法（二）">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/快排.png">
-<meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/二分.png">
-<meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/二分.png">
-<meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/二分1.png">
-<meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/二分2.png">
-<meta property="og:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/二分3.png">
-<meta property="article:published_time" content="2021-05-11T01:21:09.000Z">
-<meta property="article:modified_time" content="2021-05-18T12:32:35.569Z">
+<meta property="og:image" content="http://example.com/2021/05/21/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%BA%8C/一维前缀和.png">
+<meta property="og:image" content="http://example.com/2021/05/21/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%BA%8C/二维前缀和定义.png">
+<meta property="og:image" content="http://example.com/2021/05/21/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%BA%8C/二维前缀和求解.png">
+<meta property="og:image" content="http://example.com/2021/05/21/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%BA%8C/二维差分.png">
+<meta property="article:published_time" content="2021-05-21T01:26:47.000Z">
+<meta property="article:modified_time" content="2021-05-22T08:34:10.291Z">
 <meta property="article:author" content="hzxwonder">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/快排.png">
+<meta name="twitter:image" content="http://example.com/2021/05/21/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%BA%8C/一维前缀和.png">
   
     <link rel="alternative" href="/atom.xml" title="hzxwonder的博客园" type="application/atom+xml">
   
@@ -172,185 +170,105 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-acwing基础算法课笔记-一" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-acwing基础算法课笔记-python实现-二" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      acwing基础算法课笔记 一
+      acwing基础算法课笔记-python实现-二
     </h1>
   
 
         
-        <a href="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/" class="archive-article-date">
-  	<time datetime="2021-05-11T01:21:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-11</time>
+        <a href="/2021/05/21/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%BA%8C/" class="archive-article-date">
+  	<time datetime="2021-05-21T01:26:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-21</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>链接地址：<a target="_blank" rel="noopener" href="https://www.acwing.com/video/10/">第一章 基础算法（一）</a></p>
+        <p>链接地址：<a target="_blank" rel="noopener" href="https://www.acwing.com/video/11/">第一章 基础算法（二）</a></p>
 <span id="more"></span>
-<h2 id="一-算法思想"><a href="#一-算法思想" class="headerlink" title="一 算法思想"></a>一 算法思想</h2><h3 id="1-快速排序"><a href="#1-快速排序" class="headerlink" title="1. 快速排序"></a>1. 快速排序</h3><ul>
-<li>确定分界点 q[l],q[(l+r)/2],q[r]</li>
-<li>调整区间</li>
-<li>递归处理左右两段 </li>
+<h2 id="一-算法思想"><a href="#一-算法思想" class="headerlink" title="一 算法思想"></a>一 算法思想</h2><h3 id="1-高精度"><a href="#1-高精度" class="headerlink" title="1. 高精度"></a>1. 高精度</h3><blockquote>
+<p>python自带高精度！</p>
+<p>挖个坑，等以后再来看</p>
+</blockquote>
+<h3 id="2-前缀和"><a href="#2-前缀和" class="headerlink" title="2. 前缀和"></a>2. 前缀和</h3><h4 id="1-一维前缀和"><a href="#1-一维前缀和" class="headerlink" title="1. 一维前缀和"></a>1. 一维前缀和</h4><blockquote>
+<p>公式：Ｓ[i] = S[i-1] + $a_i$    </p>
+<p>a中i从1开始，S中i从0开始，且S[0] = 0</p>
+<p>作用：当需要求解数组中的一段区间[l,r]的和，特别是当题目中需要求解多次的时候，前缀和优势越大。</p>
+</blockquote>
+<p>　　求解数组[l,r]区间之和公式推导如下图所示：</p>
+<p><img src="/2021/05/21/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%BA%8C/一维前缀和.png" alt="一维前缀和"></p>
+<h4 id="2-二维前缀和"><a href="#2-二维前缀和" class="headerlink" title="2. 二维前缀和"></a>2. 二维前缀和</h4><ul>
+<li>建立公式：S[i,j] = S[i-1,j] +S[i,j-1]-S[i-1,j-1]+$a_{ij}$ </li>
 </ul>
-<blockquote>
-<p>为什么快速排序的最好时间复杂度为O(nlogn)?</p>
-<p>– 首先我们需要明确一点，快排无论将原数组分成几段区间，每一层的递归对每一段区间的操作时间总和都为O(n)，所以最好的情况是，快排的每一层递归，都能正好将每个区间分成两块，即最少的递归层数为log2n，故快速排序的最好时间复杂度为O(nlogn)。</p>
-<p>– 如下图所示，<img src="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/快排.png" alt="快排"></p>
-<p>　　快排第一层递归，两个指针l,r分别从左右两端出发直至相遇，所用时间复杂度为O(n)，将数组分成了a1,a2两段；</p>
-<p>　　快排的第二层递归，左半边的两个指针分别从a1左右两端出发直至相遇，所用时间复杂度为O(n/2);同理，右半边亦然，时间复杂度为O(n/2)，故快排的第二层递归所用时间复杂度也为O(n)。</p>
-<p>　　故快排的时间复杂度取决于递归的层数，当递归层数为log2n时，即每一层递归，都能将所有区间一分为二，快排的时间复杂度最优，为O(nlogn)，而当递归层数为n时，快排的时间复杂度最差，为O($n^2$)。</p>
-</blockquote>
-<h3 id="2-归并排序-–分治"><a href="#2-归并排序-–分治" class="headerlink" title="2. 归并排序 –分治"></a>2. 归并排序 –分治</h3><ul>
-<li>确定分界点 mid = ( l + r ) // 2</li>
-<li>递归排序左半边和右半边</li>
-<li>归并合二为一，双指针归并</li>
-</ul>
-<blockquote>
-<p>与快排不同，归并排序先递归后归并</p>
-</blockquote>
-<h3 id="3-整数二分"><a href="#3-整数二分" class="headerlink" title="3. 整数二分"></a>3. 整数二分</h3><blockquote>
-<p>目的是为了找到边界</p>
-</blockquote>
-<p>　　刚开始看Y总的视频时对区间的转换一头雾水，不知道为什么要找相反的区间，后来我又看了一遍，知道了二分的“找边界”目的，就很清楚了。</p>
-<p><img src="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/二分.png" alt="二分"></p>
-<p>　　如上图所示，二分的目的其实就是找到ａ和ｂ两个点。当mid满足红色区间要求时，如（1）所示，说明左半边区间都满足，边界不可能在左半边区间，故需要将区间替换成[mid,r];当mid不满足红色区间要求时，如图（2）所示，说明右半边区间都不满足，故边界需要在[l,mid-1]中寻找。</p>
-<p>　　同理，当mid满足绿色区间要求时，如（2）所示，说明右半边区间都满足，边界不可能在右半边区间，故需要将区间替换成[l,mid];当mid不满足绿色区间要求时，如图（1）所示，说明左半边区间都不满足，故边界需要在[r,mid+1]中寻找。</p>
+<p>　　如下图所示，$S_{ij}$为矩形区间 [1:i,1:j] 的数之和,求解公式为红色矩形$S_{i-1,j}$区间之和加上绿色矩形$S_{i,j-1}$区间之和，后因为重复了$S_{i-1,j-1}$这一块，故需要减去$S_{i-1,j-1}$，最后再加上$a_{ij}$。</p>
+<p><img src="/2021/05/21/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%BA%8C/二维前缀和定义.png" alt="二维前缀和"></p>
 <ul>
-<li>判断转换后的区间<ul>
-<li>l = mid ===&gt; mid = $\frac{(l+r+1)}{2}$ </li>
-<li>r = mid ===&gt; mid = $\frac{(l+r)}{2}$</li>
+<li>求解公式：S[m:a,n:b] = S[a,b] - S[m-1,b]-S[a,n-1]+S[m-1,n-1]</li>
 </ul>
+<p>　　如下图所示，要求黑色阴影区间的数之和，则需要我们用S[a,b]去减去绿色阴影区间之和，再减去蓝色阴影区间之和，最后加上紫色阴影区间之和。</p>
+<p><img src="/2021/05/21/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%BA%8C/二维前缀和求解.png" alt="二维前缀和"></p>
+<h3 id="3-差分"><a href="#3-差分" class="headerlink" title="3.差分"></a>3.差分</h3><h4 id="1-一维差分"><a href="#1-一维差分" class="headerlink" title="1. 一维差分"></a>1. 一维差分</h4><blockquote>
+<p>前缀和的逆变换</p>
+</blockquote>
+<p>　　若前缀和数组为[a1,a2,…,an]，差分数组为[b1,b2,…,bn]，则两者的对应关系为</p>
+<p>​        <script type="math/tex">a_1 = b_1,a_2=b_1+b_2,a_3=b_1+b_2+b_3...</script></p>
+<p>则转换过来为</p>
+<p>​        <script type="math/tex">b_1=a_1,b_2=a_2-a_1,b_3=a_3-a_2,...,b_n=a_n-a_{n-1}</script></p>
+<p>作用：</p>
+<ul>
+<li>当要求将前缀和数组a的某一段区间 [l,r] 加/减一个常数C时，只需将差分数组的$b_l =b_l +c,b_{r+1}=b_{r+1}-c$即可。</li>
+</ul>
+<h4 id="2-二维差分"><a href="#2-二维差分" class="headerlink" title="2. 二维差分"></a>2. 二维差分</h4><p>　　二维差分数组的作用如下图所示。</p>
+<p><img src="/2021/05/21/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%BA%8C/二维差分.png" alt="二维前缀和"></p>
+<p>　　我们若想要将前缀和矩阵a从(x1,y1)到(x2,y2)区间内全部元素加上常数C，则需要在差分矩阵b中实施如下变换：</p>
+<ul>
+<li>b[$x_1$,$y_1$] += C ===&gt; 使得前缀和矩阵a[$x_1$,$y_1$]右下角的所有元素内都加上C</li>
+<li>b[$x_2+1$,$y_1$] -= C ===&gt; a矩阵红色区间减去C</li>
+<li>b[$x_1$,$y_2+1$] -= C ===&gt; a矩阵绿色区间减去C</li>
+<li>b[$x_2+1$,$y_2+1$] += C ===&gt; 因为紫色区间多减了C，故需要将紫色区间加上C</li>
+</ul>
+<h2 id="二-代码"><a href="#二-代码" class="headerlink" title="二 代码"></a>二 代码</h2><h3 id="1-高精度-1"><a href="#1-高精度-1" class="headerlink" title="1. 高精度"></a>1. 高精度</h3><h3 id="2-前缀和-1"><a href="#2-前缀和-1" class="headerlink" title="2. 前缀和"></a>2. 前缀和</h3><h4 id="1-一维前缀和-1"><a href="#1-一维前缀和-1" class="headerlink" title="1. 一维前缀和"></a>1. 一维前缀和</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">n,m = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">num_lst = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">S = []</span><br><span class="line">S.append(<span class="number">0</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,n+<span class="number">1</span>):</span><br><span class="line">    S.append(S[i-<span class="number">1</span>] + num_lst[i-<span class="number">1</span>])</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(m):</span><br><span class="line">    l,r = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">    <span class="built_in">print</span>(S[r]-S[l-<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+<ul>
+<li>num_lst的下标从0开始，与上方分析的不同，这里的公式应为S[i] = S[i-1] + num_lst[i-1] (i=1,2,…n) ，否则将会越界。</li>
+</ul>
+<h4 id="2-二维前缀和-1"><a href="#2-二维前缀和-1" class="headerlink" title="2. 二维前缀和"></a>2. 二维前缀和</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">n,m,q = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">num_lst_total = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">    num_lst = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">    num_lst_total.append(num_lst)</span><br><span class="line">    </span><br><span class="line">S_each = [<span class="number">0</span> <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,m+<span class="number">1</span>)]</span><br><span class="line">S = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    S.append(S_each[::])</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,n+<span class="number">1</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,m+<span class="number">1</span>):</span><br><span class="line">        S[i][j] = S[i-<span class="number">1</span>][j] + S[i][j-<span class="number">1</span>] - S[i-<span class="number">1</span>][j-<span class="number">1</span>] + num_lst_total[i-<span class="number">1</span>][j-<span class="number">1</span>] <span class="comment">#建立二维矩阵</span></span><br><span class="line">        </span><br><span class="line"><span class="keyword">for</span> e <span class="keyword">in</span> <span class="built_in">range</span>(q):</span><br><span class="line">    x1,y1,x2,y2 = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">    sum_all = S[x2][y2] - S[x1-<span class="number">1</span>][y2] - S[x2][y1-<span class="number">1</span>] + S[x1-<span class="number">1</span>][y1-<span class="number">1</span>] <span class="comment">#求解</span></span><br><span class="line">    <span class="built_in">print</span>(sum_all)</span><br></pre></td></tr></table></figure>
+<p>　　这里面有几个需要注意的点：</p>
+<ul>
+<li><p>python建立二维数组不用numpy就很鸡肋，刚开始使用列表表达式建立二维数组</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[[<span class="number">0</span> <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,m+<span class="number">1</span>)] <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>)]</span><br></pre></td></tr></table></figure>
+<p>　　结果因为是浅复制，列表中某一行的某个元素改变都会导致列表中全部行的对应位置元素改变。</p>
+<p>　　后来使用了一个循环加append，代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    S.append(S_each)</span><br></pre></td></tr></table></figure>
+<p>　　还是会出现浅复制的问题，后来上网查了资料，使用了如下代码，才能正常地输出正确结果。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">S_each = [<span class="number">0</span> <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,m+<span class="number">1</span>)]</span><br><span class="line">S = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>,n+<span class="number">1</span>):</span><br><span class="line">    S.append(S_each[::])</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="4-浮点数二分"><a href="#4-浮点数二分" class="headerlink" title="4. 浮点数二分"></a>4. 浮点数二分</h3><blockquote>
-<p>其实就是夹逼法，通过区间不断缩小来确定值。</p>
-</blockquote>
-<h2 id="二-代码"><a href="#二-代码" class="headerlink" title="二 代码"></a>二 代码</h2><h3 id="1-快速排序-1"><a href="#1-快速排序-1" class="headerlink" title="1. 快速排序"></a>1. 快速排序</h3><ul>
-<li>先来个主函数，处理输入输出</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">   n = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">   num_lst = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">   quick_sort(num_lst,<span class="number">0</span>,n-<span class="number">1</span>)</span><br><span class="line">   <span class="keyword">for</span> ele <span class="keyword">in</span> num_lst:</span><br><span class="line">         <span class="built_in">print</span>(ele,end=<span class="string">&#x27; &#x27;</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="3-差分-1"><a href="#3-差分-1" class="headerlink" title="3. 差分"></a>3. 差分</h3><h4 id="1-一维差分-1"><a href="#1-一维差分-1" class="headerlink" title="1. 一维差分"></a>1. 一维差分</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">insert</span>(<span class="params">l,r,c</span>):</span></span><br><span class="line">    b[l] += c</span><br><span class="line">    b[r+<span class="number">1</span>] -= c</span><br><span class="line">    </span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    n,m = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">    num_lst = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">    a = []</span><br><span class="line">    a.append(<span class="number">0</span>)</span><br><span class="line">    a.extend(num_lst)</span><br><span class="line">    b = [<span class="number">0</span> <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n+<span class="number">2</span>)]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,n+<span class="number">1</span>):</span><br><span class="line">        insert(i,i,a[i])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(m):</span><br><span class="line">        l,r,c = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">        insert(l,r,c)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,n+<span class="number">1</span>):</span><br><span class="line">        b[i] += b[i-<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,n+<span class="number">1</span>):</span><br><span class="line">        <span class="built_in">print</span>(b[i],end=<span class="string">&#x27; &#x27;</span>)</span><br></pre></td></tr></table></figure>
 <ul>
-<li>编写快排函数</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">quick_sort</span>(<span class="params">num_lst,l,r</span>):</span></span><br><span class="line">    <span class="keyword">if</span> r &lt;= l:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        i = l - <span class="number">1</span></span><br><span class="line">        j = r + <span class="number">1</span></span><br><span class="line">        num = num_lst[(i+j)//<span class="number">2</span>] <span class="comment">#！！！很重要</span></span><br><span class="line">        <span class="keyword">while</span> i &lt; j:</span><br><span class="line">          i += <span class="number">1</span></span><br><span class="line">          j -= <span class="number">1</span></span><br><span class="line">          <span class="keyword">while</span> num &gt; num_lst[i]:</span><br><span class="line">                i += <span class="number">1</span></span><br><span class="line">          <span class="keyword">while</span> num &lt; num_lst[j]:</span><br><span class="line">                j -= <span class="number">1</span></span><br><span class="line">          <span class="keyword">if</span> i &lt; j:</span><br><span class="line">                num_lst[i],num_lst[j] = num_lst[j],num_lst[i]</span><br><span class="line">        quick_sort(num_lst,l,j)</span><br><span class="line">        quick_sort(num_lst,j+<span class="number">1</span>,r)</span><br></pre></td></tr></table></figure>
+<li><p>注意将b数组开大一点，否则可能会越界或者出错。(因为存在b[r+1]且下标从1开始，故至少要+2)</p>
+</li>
+<li><p>首先我们要明确一点，在前缀和数组中，对一个区间内做的操作，不会且不应该对区间以外的数值造成改变,b[r+1] -= c就是为了实现这一目的。故我们首先将b数组里的元素全置为0，由此计算出来的前缀和数组都为0。如果我们想使b数组某一位置i的前缀和为a[i],则相当于在[i,i]中插入一个数a[i] (因为已经假设b为全0数组了)，即b[i] += a[i] ,b[i+1] -= a[i] 。</p>
 <blockquote>
-<p>　　之前用Y总的代码一直报RE错误，本以为是递归层数开小了，但开大之后还是报错，直到改成中间值 num = num_lst[ (i+j)//2] 才顺利通过。</p>
+<p>可能有人会说，你通过循环已经将b数组i前面的一些元素已经计算出来了，为什么还能假设b数组为全0数组？</p>
+<p>正如上面所说的那样，“对一个区间内做的操作，不会对区间以外的数值造成改变”。在循环中，我们对每一个元素的计算都遵守了这一原则，故b数组位置i前面插入的数据，对a[i]并没有造成变化，a[i]的初始值依然为0。</p>
 </blockquote>
-<h3 id="２-归并排序"><a href="#２-归并排序" class="headerlink" title="２. 归并排序"></a>２. 归并排序</h3><ul>
-<li>主函数，用来输入输出</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">      n = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">      num_lst = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">      temp = [<span class="number">0</span>] * n</span><br><span class="line">      merge_sort(num_lst,<span class="number">0</span>,n-<span class="number">1</span>)</span><br><span class="line">      <span class="keyword">for</span> ele <span class="keyword">in</span> num_lst:</span><br><span class="line">            <span class="built_in">print</span>(ele,end=<span class="string">&#x27; &#x27;</span>)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>归并函数</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">merge_sort</span>(<span class="params">num_lst,l,r</span>):</span></span><br><span class="line">    <span class="keyword">if</span> l &gt;= r:</span><br><span class="line">        <span class="keyword">return</span> </span><br><span class="line">    mid = (l + r) // <span class="number">2</span></span><br><span class="line">    merge_sort(num_lst,l,mid)</span><br><span class="line">    merge_sort(num_lst,mid+<span class="number">1</span>,r)</span><br><span class="line">    i = l</span><br><span class="line">    j = mid+<span class="number">1</span></span><br><span class="line">    k = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> i &lt;= mid <span class="keyword">and</span> j &lt;= r:</span><br><span class="line">        <span class="keyword">if</span> num_lst[i] &lt;= num_lst[j]:</span><br><span class="line">            temp[k] = num_lst[i]</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">            k += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            temp[k] = num_lst[j]</span><br><span class="line">            j += <span class="number">1</span></span><br><span class="line">            k += <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> i &lt;= mid:</span><br><span class="line">        temp[k] = num_lst[i]</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">        k += <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> j &lt;= r:</span><br><span class="line">        temp[k] = num_lst[j]</span><br><span class="line">        j += <span class="number">1</span></span><br><span class="line">        k += <span class="number">1</span></span><br><span class="line">    num_lst[l:r+<span class="number">1</span>] = temp[<span class="number">0</span>:r-l+<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>　　刚开始将temp数组建在了merge_sort函数中，然后打算通过append和extend来实现，但一直TLE，后来看了题解，将temp置为全局变量，merge_sort函数既不用每次递归建立数组，也可直接通过数组下标改变temp，加快了执行速度，最后能正常通过。</p>
-</blockquote>
-<h3 id="3-逆序对数量-—归并排序"><a href="#3-逆序对数量-—归并排序" class="headerlink" title="3. 逆序对数量 —归并排序"></a>3. 逆序对数量 —归并排序</h3><ul>
-<li>主函数来处理输入输出，记得建立temp数组</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    n = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">    num_lst = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">    temp = [<span class="number">0</span>]*n</span><br><span class="line">    count = merge_sort(num_lst,<span class="number">0</span>,n-<span class="number">1</span>)</span><br><span class="line">    <span class="built_in">print</span>(count)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>逆序对数量求解</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">merge_sort</span>(<span class="params">num_lst,l,r</span>):</span></span><br><span class="line">    <span class="keyword">if</span> l &gt;= r:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    mid = (l + r)//<span class="number">2</span></span><br><span class="line">    <span class="built_in">sum</span> = merge_sort(num_lst,l,mid) + merge_sort(num_lst,mid+<span class="number">1</span>,r)</span><br><span class="line">    i = l</span><br><span class="line">    j = mid+<span class="number">1</span></span><br><span class="line">    k = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> i &lt;= mid <span class="keyword">and</span> j &lt;= r:</span><br><span class="line">        <span class="keyword">if</span> num_lst[i] &lt;= num_lst[j]:</span><br><span class="line">            temp[k] = num_lst[i]</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">            k += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            temp[k] = num_lst[j]</span><br><span class="line">            k += <span class="number">1</span></span><br><span class="line">            j += <span class="number">1</span></span><br><span class="line">            <span class="built_in">sum</span> += mid - i + <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> i &lt;= mid:</span><br><span class="line">        temp[k] = num_lst[i]</span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">        k += <span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> j &lt;= r:</span><br><span class="line">        temp[k] = num_lst[j]</span><br><span class="line">        j += <span class="number">1</span></span><br><span class="line">        k += <span class="number">1</span></span><br><span class="line">    num_lst[l:r+<span class="number">1</span>] = temp[<span class="number">0</span>:k]</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">sum</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>　　对于两个数组，两个数组里的元素位置如何改变，都不会影响到第一个数组每一个元素与第二个数组里元素的逆序对数量</p>
-<p>　　若num_lst[i] &gt; num_lst[j] ，又因为num_lst[i+1]…num_lst[mid] &gt;= num_lst[i]，故num_lst[j]小于num_lst[i]以后的任意数，故sum +=  mid - i +1</p>
-<p>如数组 5 1 3 4 2</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>迭代次数</th>
-<th>元素分组</th>
-<th>现有逆序对</th>
-<th>总共逆序对 6</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>(5,1,3),(4,2)</td>
-<td>无</td>
-<td>(5,1),(5,3),(5,4),(5,2),(3,2),(4,2)</td>
-</tr>
-<tr>
-<td>2</td>
-<td>((5,1),(3)),((4),(2))</td>
-<td>无</td>
-<td>(5,1),(5,3),(5,4),(5,2),(3,2),(4,2)</td>
-</tr>
-<tr>
-<td>3</td>
-<td>((5),(1),(3)),(2,4)</td>
-<td>(4,2) 1</td>
-<td>(5,1),(5,3),(5,4),(5,2),(3,2),(4,2)</td>
-</tr>
-<tr>
-<td>4</td>
-<td>((1,5),(3)),(2,4)</td>
-<td>(4,2),(5,1) 2</td>
-<td>(5,1),(5,3),(5,4),(5,2),(3,2),(4,2)</td>
-</tr>
-<tr>
-<td>5</td>
-<td>(1,3,5),(2,4)</td>
-<td>(4,2),(5,1),(5,3) 3</td>
-<td>(5,1),(5,3),(5,4),(5,2),(3,2),(4,2)</td>
-</tr>
-<tr>
-<td>6</td>
-<td>(1,2,3,4,5)</td>
-<td>(4,2),(5,1),(5,3),(3,2),(5,2),(5,4) 6</td>
-<td>(5,1),(5,3),(5,4),(5,2),(3,2),(4,2)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>　　每一次的合并，只需考虑跨数组的逆序对，因为同一数组里已经排好序。</p>
-</blockquote>
-<h3 id="4-二分"><a href="#4-二分" class="headerlink" title="4. 二分"></a>4. 二分</h3><p>代码如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">n,q = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">num_lst = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line"> </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(q):</span><br><span class="line">    num = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">    l = <span class="number">0</span></span><br><span class="line">    r = n-<span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> l &lt; r:</span><br><span class="line">        mid = (l+r)//<span class="number">2</span></span><br><span class="line">        <span class="keyword">if</span> num_lst[mid] &gt;= num:</span><br><span class="line">            r = mid</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            l = mid+<span class="number">1</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> num_lst[l] != num:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;-1 -1&#x27;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(l,end=<span class="string">&#x27; &#x27;</span>)</span><br><span class="line">        l = <span class="number">0</span></span><br><span class="line">        r = n-<span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span> l &lt; r:</span><br><span class="line">            mid = (l+r+<span class="number">1</span>)//<span class="number">2</span></span><br><span class="line">            <span class="keyword">if</span> num_lst[mid] &lt;= num:</span><br><span class="line">                l = mid</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                r = mid-<span class="number">1</span></span><br><span class="line">        <span class="built_in">print</span>(l)</span><br></pre></td></tr></table></figure>
-<p>　　刚开始两个while循环写反了，输出结果都是[r,l]，但一直没搞明白为什么要按照如此的顺序，后来画个图就一目了然了。</p>
-<p><img src="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/二分.png" alt="二分"></p>
-<p>　　刚才讨论过，当我们需要求a时，需要满足以下条件：</p>
-<ul>
-<li>当数位于[l,a]区间时满足左半边要求</li>
-<li>当数位于[a+1,r]区间时满足右半边要求</li>
-</ul>
-<p>　　当我们需要求b时，应满足以下条件：</p>
-<ul>
-<li>当数位于[l,b-1]区间时满足左半边要求</li>
-<li>当数位于[b,r]区间时满足右半边要求。</li>
-</ul>
-<p>　　按题目所给的，我们需要求出等于给定数字q的区间，故左边界为满足大于等于q的第一个索引，右边界为满足小于等于q的最后一个索引。如下图所示。</p>
-<p><img src="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/二分1.png" alt="二分"></p>
-<p>　　求左边界时，即求b的值，如下图所示。故判断条件应为：</p>
-<ul>
-<li>num_lst[mid] &gt;= q ==&gt; r = mid</li>
-<li>num_lst[mid] &lt; q ==&gt; l = mid+1</li>
-<li>mid = (l + r)//2</li>
-</ul>
-<p><img src="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/二分2.png" alt="二分"></p>
-<p>求右边界时，即求a的值，如下图所示。故判断条件应为：</p>
-<ul>
-<li>num_lst[mid] &lt;= q ==&gt; l = mid</li>
-<li>num_lst[mid] &gt; q ==&gt; r = mid-1</li>
-<li>mid = (l + r + 1)//2</li>
-</ul>
-<p><img src="/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/二分3.png" alt="二分"></p>
-<h3 id="5-浮点二分-–-根号求值"><a href="#5-浮点二分-–-根号求值" class="headerlink" title="5. 浮点二分 – 根号求值"></a>5. 浮点二分 – 根号求值</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">n = <span class="built_in">float</span>(<span class="built_in">input</span>())</span><br><span class="line">l = <span class="number">0</span></span><br><span class="line">r = n+<span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> (r-l &gt; <span class="number">1e-8</span>):</span><br><span class="line">      mid = (l+r)/<span class="number">2.0</span></span><br><span class="line">      <span class="keyword">if</span> mid*mid &gt;= n:</span><br><span class="line">            r = mid</span><br><span class="line">      <span class="keyword">else</span>:</span><br><span class="line">            l = mid</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;%.6f&quot;</span>%l)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>注意右边界要+1，否则无法计算小于1的根号值。</li>
+</li>
+<li><p>```python<br>for i in range(1,n+1):</p>
+<pre><code>insert(i,i,a[i])
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  或许可能还是一脸茫然，下面来通过构造表格来观察b数组的变化。</span><br><span class="line"></span><br><span class="line">  | i    | b                                                     |</span><br><span class="line">  | ---- | ----------------------------------------------------- |</span><br><span class="line">  | 1    | b[1] +&#x3D;a[1],b[2] -&#x3D;a[1] &#x3D;&#x3D;&#x3D;&gt; b[1] &#x3D; a[1]              |</span><br><span class="line">  | 2    | b[2] +&#x3D; a[2],b[3] -&#x3D; a[2] &#x3D;&#x3D;&#x3D;&gt; b[2] &#x3D; a[2] - a[1]     |</span><br><span class="line">  | 3    | b[3] +&#x3D; a[3],b[4] -&#x3D; a[3] &#x3D;&#x3D;&#x3D;&gt; b[3] &#x3D; a[3] - a[2]     |</span><br><span class="line">  |      | …                                                     |</span><br><span class="line">  | n    | b[n] +&#x3D; a[n],b[n+1] -&#x3D; a[n] &#x3D;&#x3D;&#x3D;&gt; b[n] &#x3D; a[n] - a[n-1] |</span><br><span class="line"></span><br><span class="line">  这与我们上面推导的式子一致，同时，因为b[n+1]不使用，故无所谓，可以就放在那儿。(这也是为什么上面b数组要开大的原因)</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">#### 2. 二维差分</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;python</span><br><span class="line">def insert(x1,y1,x2,y2,c):</span><br><span class="line">    b[x1][y1] +&#x3D; c</span><br><span class="line">    b[x1][y2+1] -&#x3D; c</span><br><span class="line">    b[x2+1][y1] -&#x3D; c</span><br><span class="line">    b[x2+1][y2+1] +&#x3D; c</span><br><span class="line"></span><br><span class="line">if __name__ &#x3D;&#x3D;&#39;__main__&#39;:</span><br><span class="line">    n,m,q &#x3D; list(map(int,input().split()))</span><br><span class="line">    num_lst &#x3D; [0]*(m+10)</span><br><span class="line">    b &#x3D; [num_lst[::] for i in range(n+10)]</span><br><span class="line"></span><br><span class="line">    a &#x3D; []</span><br><span class="line">    a.append([0 for i in range(m+1)])</span><br><span class="line">    for i in range(n):</span><br><span class="line">        num_lst &#x3D; [0]</span><br><span class="line">        num_lst.extend(list(map(int,map(int,input().split()))))</span><br><span class="line">        a.append(num_lst)</span><br><span class="line">    </span><br><span class="line">    #构建差分矩阵</span><br><span class="line">    for i in range(1,n+1):</span><br><span class="line">        for j in range(1,m+1):</span><br><span class="line">            insert(i,j,i,j,a[i][j])</span><br><span class="line">    </span><br><span class="line">    #处理每一次询问</span><br><span class="line">    for each in range(q):</span><br><span class="line">        x1,y1,x2,y2,c &#x3D; list(map(int,input().split()))</span><br><span class="line">        insert(x1,y1,x2,y2,c)</span><br><span class="line">    </span><br><span class="line">    #构造前缀和</span><br><span class="line">    for i in range(1,n+1):</span><br><span class="line">        for j in range(1,m+1):</span><br><span class="line">            b[i][j] +&#x3D; b[i-1][j] + b[i][j-1] - b[i-1][j-1]</span><br><span class="line">    </span><br><span class="line">    #输出</span><br><span class="line">    for i in range(1,n+1):</span><br><span class="line">        for j in range(1,m+1):</span><br><span class="line">            print(b[i][j],end&#x3D;&#39; &#39;)</span><br><span class="line">        print()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>这一题最麻烦的就是矩阵处理了，其他按照差分矩阵思想就基本能写出来了。</p>
+</li>
+<li><pre><code class="lang-python">b[i][j] += b[i-1][j] + b[i][j-1] - b[i-1][j-1]
+</code></pre>
+<p>特别注意这条语句中是 <strong>’+=‘</strong> 而不是 ’=‘ （虽然不知道当时为什么会犯这样的错。）</p>
+</li>
 </ul>
 
       
@@ -453,7 +371,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/11/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/21/acwing%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AF%BE%E7%AC%94%E8%AE%B0-python%E5%AE%9E%E7%8E%B0-%E4%BA%8C/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -467,18 +385,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/05/18/postgresql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/05/22/%E5%BC%B9%E6%80%A7%E6%9E%9C%E5%86%BB-pyopengl%E5%AE%9E%E7%8E%B0/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          postgresql常用操作命令
+          弹性果冻-pyopengl实现
         
       </div>
     </a>
   
   
-    <a href="/2021/04/30/pyopengl%E8%B8%A9%E5%9D%91%E4%B9%8B%E8%B7%AF/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">pyopengl踩坑之路</div>
+    <a href="/2021/05/18/postgresql%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">postgresql常用操作命令</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -505,7 +423,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3"><span class="toc-number">1.</span> <span class="toc-text">一 算法思想</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F"><span class="toc-number">1.1.</span> <span class="toc-text">1. 快速排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F-%E2%80%93%E5%88%86%E6%B2%BB"><span class="toc-number">1.2.</span> <span class="toc-text">2. 归并排序 –分治</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%95%B4%E6%95%B0%E4%BA%8C%E5%88%86"><span class="toc-number">1.3.</span> <span class="toc-text">3. 整数二分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%B5%AE%E7%82%B9%E6%95%B0%E4%BA%8C%E5%88%86"><span class="toc-number">1.4.</span> <span class="toc-text">4. 浮点数二分</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E4%BB%A3%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text">二 代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F-1"><span class="toc-number">2.1.</span> <span class="toc-text">1. 快速排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%92-%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F"><span class="toc-number">2.2.</span> <span class="toc-text">２. 归并排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%80%86%E5%BA%8F%E5%AF%B9%E6%95%B0%E9%87%8F-%E2%80%94%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F"><span class="toc-number">2.3.</span> <span class="toc-text">3. 逆序对数量 —归并排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%BA%8C%E5%88%86"><span class="toc-number">2.4.</span> <span class="toc-text">4. 二分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%B5%AE%E7%82%B9%E4%BA%8C%E5%88%86-%E2%80%93-%E6%A0%B9%E5%8F%B7%E6%B1%82%E5%80%BC"><span class="toc-number">2.5.</span> <span class="toc-text">5. 浮点二分 – 根号求值</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3"><span class="toc-number">1.</span> <span class="toc-text">一 算法思想</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%AB%98%E7%B2%BE%E5%BA%A6"><span class="toc-number">1.1.</span> <span class="toc-text">1. 高精度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%89%8D%E7%BC%80%E5%92%8C"><span class="toc-number">1.2.</span> <span class="toc-text">2. 前缀和</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E4%B8%80%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C"><span class="toc-number">1.2.1.</span> <span class="toc-text">1. 一维前缀和</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C"><span class="toc-number">1.2.2.</span> <span class="toc-text">2. 二维前缀和</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%B7%AE%E5%88%86"><span class="toc-number">1.3.</span> <span class="toc-text">3.差分</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E4%B8%80%E7%BB%B4%E5%B7%AE%E5%88%86"><span class="toc-number">1.3.1.</span> <span class="toc-text">1. 一维差分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%BA%8C%E7%BB%B4%E5%B7%AE%E5%88%86"><span class="toc-number">1.3.2.</span> <span class="toc-text">2. 二维差分</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E4%BB%A3%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text">二 代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%AB%98%E7%B2%BE%E5%BA%A6-1"><span class="toc-number">2.1.</span> <span class="toc-text">1. 高精度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%89%8D%E7%BC%80%E5%92%8C-1"><span class="toc-number">2.2.</span> <span class="toc-text">2. 前缀和</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E4%B8%80%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C-1"><span class="toc-number">2.2.1.</span> <span class="toc-text">1. 一维前缀和</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C-1"><span class="toc-number">2.2.2.</span> <span class="toc-text">2. 二维前缀和</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%B7%AE%E5%88%86-1"><span class="toc-number">2.3.</span> <span class="toc-text">3. 差分</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E4%B8%80%E7%BB%B4%E5%B7%AE%E5%88%86-1"><span class="toc-number">2.3.1.</span> <span class="toc-text">1. 一维差分</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -673,6 +591,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">postgresql</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">弹性网络</a>
               </li>
             
             <div class="clearfix"></div>

@@ -6,19 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>译-GLUT教程-pyopengl实现-(三)重设窗口大小 | hzxwonder的博客园</title>
+  <title>Tag: 弹性网络 | hzxwonder的博客园</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="原地址：Preparing the window for a reshape">
-<meta property="og:type" content="article">
-<meta property="og:title" content="译-GLUT教程-pyopengl实现-(三)重设窗口大小">
-<meta property="og:url" content="http://example.com/2021/04/28/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-(%E4%B8%89)%E9%87%8D%E8%AE%BE%E7%AA%97%E5%8F%A3%E5%A4%A7%E5%B0%8F/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="hzxwonder的博客园">
+<meta property="og:url" content="http://example.com/tags/%E5%BC%B9%E6%80%A7%E7%BD%91%E7%BB%9C/index.html">
 <meta property="og:site_name" content="hzxwonder的博客园">
-<meta property="og:description" content="原地址：Preparing the window for a reshape">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-04-28T05:44:23.000Z">
-<meta property="article:modified_time" content="2021-04-30T08:02:13.663Z">
 <meta property="article:author" content="hzxwonder">
-<meta property="article:tag" content="GLUT">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="hzxwonder的博客园" type="application/atom+xml">
@@ -165,95 +160,52 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-译-GLUT教程-pyopengl实现-(三)重设窗口大小" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      译-GLUT教程-pyopengl实现-(三)重设窗口大小
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2021" class="archive-year">2021</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2021/05/22/%E5%BC%B9%E6%80%A7%E6%9E%9C%E5%86%BB-pyopengl%E5%AE%9E%E7%8E%B0/" class="archive-article-date">
+  	<time datetime="2021-05-22T01:47:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-22</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2021/05/22/%E5%BC%B9%E6%80%A7%E6%9E%9C%E5%86%BB-pyopengl%E5%AE%9E%E7%8E%B0/">弹性果冻-pyopengl实现</a>
     </h1>
   
 
-        
-        <a href="/2021/04/28/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-(%E4%B8%89)%E9%87%8D%E8%AE%BE%E7%AA%97%E5%8F%A3%E5%A4%A7%E5%B0%8F/" class="archive-article-date">
-  	<time datetime="2021-04-28T05:44:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>原地址：<a target="_blank" rel="noopener" href="http://www.lighthouse3d.com/tutorials/glut-tutorial/preparing-the-window-for-a-reshape/">Preparing the window for a reshape</a></p>
-<span id="more"></span>
-<p>​        运行你刚刚创建的程序。 你会看到两个窗口：控制台窗口和OpenGL窗口。 现在调整窗口大小，以使高度不再与宽度匹配。你会看见三角形发生了变形。发生这种情况是因为我们没有正确设置透视。 默认情况下，透视假定宽高比为1，并进行相应绘制。 因此，当比率改变时，透视结果会失真。所以，每次比率改变时，都需要重新计算视角。</p>
-<blockquote>
-<p>如果是pyopengl则不会有控制台窗口</p>
-</blockquote>
-<p>​                GLUT提供了一种方法来定义在调整窗口大小时应调用哪个函数，即注册用于重新计算透视的回调函数。 此外，在最初创建窗口时也会调用此函数，因此，即使你最初使用的窗口不是正方形，也会看起来不错。</p>
-<p>​                当你调用glutReshapeFunc时，GLUT将注册回调函数。</p>
-<hr>
-<p>glutReshapeFunc(func)</p>
-<p>参数：</p>
-<ul>
-<li>func — 调整窗口函数，func(width:int,height:int)</li>
-</ul>
-<hr>
-<p>​                因此，我们必须做的是回到上一节中定义的main函数，并添加一个对glutReshapeFunc的回调函数。假设窗口调整的函数名为changeSize。则添加了对glutReshapeFunc调用的main函数代码为：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="comment">#init GLUT and create window</span></span><br><span class="line">    glutInit()</span><br><span class="line">    glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA)</span><br><span class="line">    glutInitWindowPosition(<span class="number">100</span>,<span class="number">100</span>)</span><br><span class="line">    glutInitWindowSize(<span class="number">320</span>,<span class="number">320</span>)</span><br><span class="line">    glutCreateWindow(<span class="string">&quot;Lighthouse3D- GLUT Tutorial&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#注册回调函数</span></span><br><span class="line">    glutDisplayFunc(renderScene)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#main函数中的新增条目</span></span><br><span class="line">    glutReshapeFunc(changeSize)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#进入处理循环</span></span><br><span class="line">    glutMainLoop()</span><br></pre></td></tr></table></figure>
-<p>​                我们需要做的下一件事是定义处理透视的函数。根据上述glutReshapeFunc的语法所示，changeSize函数有两个参数，分别是窗口的新宽度和新高度，即没有窗口装饰。</p>
-<blockquote>
-<p>　window decorations是什么？</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">changeSize</span>(<span class="params">w, h</span>):</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># Prevent a divide by zero, when window is too short</span></span><br><span class="line">    <span class="comment"># (you can&#x27;t make a window of zero width).</span></span><br><span class="line">    <span class="keyword">if</span>(h == <span class="number">0</span>):</span><br><span class="line">        h = <span class="number">1</span></span><br><span class="line">    ratio = <span class="number">1.0</span>* w / h</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Use the Projection Matrix</span></span><br><span class="line">    glMatrixMode(GL_PROJECTION)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Reset Matrix</span></span><br><span class="line">    glLoadIdentity()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Set the viewport to be the entire window</span></span><br><span class="line">    glViewport(<span class="number">0</span>, <span class="number">0</span>, w, h)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Set the correct perspective.</span></span><br><span class="line">    gluPerspective(<span class="number">45</span>,ratio,<span class="number">1</span>,<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Get Back to the Modelview</span></span><br><span class="line">    glMatrixMode(GL_MODELVIEW)</span><br></pre></td></tr></table></figure>
-<p>​    我们在这段代码中新增了一些函数，所以需要进行一些必要的详细介绍，防止读者看不懂。 第一步是计算宽度和高度之间的比率。 请注意，为了正确执行此操作，我们必须考虑到窗口高度实际为零的情况，以防被零除。</p>
-<p>​    然后，我们将当前矩阵设置为投影矩阵。 这是定义视锥的矩阵。 接着，我们加载单位矩阵以对其进行初始化。 然后，使用glViewport函数将视口设置为整个窗口。 您可以尝试使用不同的值来查看所得到的结果，前两个参数是左下角的坐标值，后两个参数是视口的宽度和高度。 请注意，这些坐标是相对于窗口而不是屏幕。如果您尝试使用其他值，请不要忘记上面计算的比率也应该使用新的宽度和高度值。</p>
-<blockquote>
-<p>视口可以为整个窗口，也可以为部分窗口，人为指定</p>
-<p>具体参考链接<a target="_blank" rel="noopener" href="https://blog.csdn.net/caoshangpa/article/details/80263354">OpenGL之glViewPort函数的用法</a></p>
-</blockquote>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">GLUT</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">pyopengl</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">弹性网络</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -261,135 +213,22 @@
         		<li class="article-tag-list-item">
         			<a href="/categories/pyopengl//" class="article-tag-list-link color4">pyopengl</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/pyopengl/GLUT//" class="article-tag-list-link color5">GLUT</a>
-        		</li>
       		
 		</ul>
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/28/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-(%E4%B8%89)%E9%87%8D%E8%AE%BE%E7%AA%97%E5%8F%A3%E5%A4%A7%E5%B0%8F/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2021/04/30/pyopengl%E8%B8%A9%E5%9D%91%E4%B9%8B%E8%B7%AF/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          pyopengl踩坑之路
-        
-      </div>
-    </a>
   
   
-    <a href="/2021/04/27/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-(%E4%BA%8C)%E5%88%9D%E5%A7%8B%E5%8C%96/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">译-GLUT教程-pyopengl实现-(二)初始化</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    目录，不存在的…
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -414,9 +253,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
