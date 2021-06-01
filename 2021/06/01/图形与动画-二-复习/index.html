@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2021 | hzxwonder的博客园</title>
+  <title>图形与动画-二-复习 | hzxwonder的博客园</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="hzxwonder的博客园">
-<meta property="og:url" content="http://example.com/archives/2021/page/2/index.html">
+  <meta name="description" content="大二下图形与动画（Ⅱ）押题+复习总结。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图形与动画-二-复习">
+<meta property="og:url" content="http://example.com/2021/06/01/%E5%9B%BE%E5%BD%A2%E4%B8%8E%E5%8A%A8%E7%94%BB-%E4%BA%8C-%E5%A4%8D%E4%B9%A0/index.html">
 <meta property="og:site_name" content="hzxwonder的博客园">
+<meta property="og:description" content="大二下图形与动画（Ⅱ）押题+复习总结。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-06-01T08:23:02.000Z">
+<meta property="article:modified_time" content="2021-06-01T08:35:12.622Z">
 <meta property="article:author" content="hzxwonder">
+<meta property="article:tag" content="图形与动画">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="hzxwonder的博客园" type="application/atom+xml">
@@ -164,350 +169,399 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-图形与动画-二-复习" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      图形与动画-二-复习
+    </h1>
+  
+
+        
+        <a href="/2021/06/01/%E5%9B%BE%E5%BD%A2%E4%B8%8E%E5%8A%A8%E7%94%BB-%E4%BA%8C-%E5%A4%8D%E4%B9%A0/" class="archive-article-date">
+  	<time datetime="2021-06-01T08:23:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-01</time>
+</a>
+        
+      </header>
     
+    <div align="center" class="post-count">
+        字数：2.3k字 | 预计阅读时长：7分钟
+    </div>
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>　　大二下图形与动画（Ⅱ）押题+复习总结。<br><span id="more"></span></p>
+<h1 id="判断"><a href="#判断" class="headerlink" title="判断"></a>判断</h1><h2 id="第一章-物理动画"><a href="#第一章-物理动画" class="headerlink" title="第一章 物理动画"></a>第一章 物理动画</h2><ol>
+<li>利用<strong>牛顿第二定律</strong>可以计算物体<strong>在任意时刻的位置、速度</strong>等信息。</li>
+<li><strong>解析法</strong>中假设受力<strong>不能改变</strong>，且难以处理<strong>碰撞时产生的不连续性</strong>。</li>
+<li><strong>运动模糊</strong>出现在<strong>长时间曝光</strong>或场景内的物体<strong>快速移动</strong>的情形里。</li>
+</ol>
+<h2 id="第二章-三维对象表示"><a href="#第二章-三维对象表示" class="headerlink" title="第二章 三维对象表示"></a>第二章 三维对象表示</h2><ol>
+<li><strong>边界表示法</strong>—用一组<strong>平面或者曲面</strong>来描述三维对象的表面。</li>
+<li><strong>空间分区表示</strong>—描述<strong>内部</strong>性质，将包含一个对象的空间区域划分成一组<strong>较小的、非重叠的连续实体</strong>。</li>
+<li>三维图形建模中运用<strong>边界表示</strong>是最普遍的形式。</li>
+<li><strong>结构实体几何法</strong>—使用<strong>集合操作</strong>来组合多个三维对象。</li>
+<li>八叉树中，构造出树形结构后，要求<strong>每一个节点</strong>对应于一个三维空间区域。</li>
+</ol>
+<h2 id="第三章-关键帧动画"><a href="#第三章-关键帧动画" class="headerlink" title="第三章 关键帧动画"></a>第三章 关键帧动画</h2><ol>
+<li><strong>基于颜色线性插值</strong>的关键帧插值算法常常用于实现各种影视在<strong>镜头切换</strong>时的<strong>淡入淡出效果</strong>。</li>
+<li><strong>易入易出</strong>—对象从<strong>静止</strong>位置处<strong>加速</strong>运动并达到<strong>最大速度</strong>，最终<strong>减速</strong>运动至<strong>静止</strong>处。有可能会考图形判断题！</li>
+<li><strong>正弦插值</strong>很少呈现<strong>匀速状态</strong>。</li>
+<li>变形中<strong>关键形状</strong>之间采用<strong>插值计算</strong>完成，进而生成形状之间的平滑变换。</li>
+<li><strong>交溶技术</strong>实际上是图像之间的<strong>线性插值</strong>。</li>
+<li>基于网格的图像变体算法运算结果的<strong>质量</strong>取决于<strong>最初</strong>建立的原图像和目标图像的<strong>四边形网格的质量</strong>。</li>
+<li>四边形网格越<strong>精细</strong>，则变体结果的图像<strong>质量</strong>一般也<strong>越高</strong>。</li>
+<li>四边形网格应当包含图像的<strong>尖点</strong>和<strong>拐点</strong>等关键点。</li>
+</ol>
+<h2 id="第四章-光照模型"><a href="#第四章-光照模型" class="headerlink" title="第四章 光照模型"></a>第四章 光照模型</h2><ol>
+<li><strong>光照模型</strong> — 对象表面上<strong>单个点</strong>的<strong>光强度</strong>计算模型。</li>
+<li>光源可以是<strong>发光体</strong>和<strong>反射体</strong>的混合。</li>
+<li><strong>点光源</strong> – 指一个<strong>无限小</strong>的点，所有光向四周<strong>平均</strong>地散射光。</li>
+<li>沿着<strong>圆锥轴光强最大</strong>，离开时<strong>强度减弱</strong>。</li>
+<li><strong>镜面反射</strong> — 反射光会集中在<strong>一部份区域</strong>。</li>
+<li><strong>表面光照效果</strong>是由<strong>光源光</strong>和<strong>其他表面</strong>反射光混合生成。</li>
+<li><strong>理想反射体</strong> — 入射光在<strong>各个方向</strong>以<strong>相同强度</strong>发散而与观察者位置无关。</li>
+<li><strong>较光滑</strong>表面的镜面<strong>反射范围较小</strong>，<strong>粗糙</strong>的对象表面有<strong>较大</strong>的<strong>反射</strong>范围。</li>
+<li><strong>光滑表面镜面反射参数较大，粗糙表面较小。</strong></li>
+<li><strong>局部光照</strong>只考虑<strong>特定对象</strong>和<strong>直接射向他的光线</strong>，<strong>全局光照</strong>则需要考虑<strong>从其他对象反射出来的光线</strong>。</li>
+<li><strong>光线追踪法</strong>从<strong>视点</strong>出发做出经过图像平面上<strong>每个像素</strong>的光线并射回到场景中。</li>
+<li><strong>辐射度算法</strong>考虑场景中光源与对象表面间<strong>辐射能量的传递</strong>来计算光强度</li>
+<li><strong>光源跟踪</strong>跟踪<strong>光线</strong>在场景中的<strong>反射</strong>和<strong>折射</strong>，并计算他们对光强的作用。</li>
+<li><strong>光线跟踪算法</strong>是一种<strong>高度视相关</strong>的算法，如果观察者位置发生了变化，光线就全部都要<strong>重新计算和跟踪</strong>。</li>
+<li>场景中<strong>任何一个对象的位置</strong>发生改变，就会引起<strong>光线反射</strong>的过程改变，从而导致<strong>部分甚至所有的光线必须重新计算</strong>。</li>
+<li><strong>光线跟踪算法</strong>中大部分时间用于<strong>计算光线与表面求交</strong>。</li>
+<li>对于一个有多个对象的场景，大部分时间用于<strong>计算沿光束方向不可见的对象的求交</strong>。</li>
+<li><strong>3Dmapping</strong>利用对象每个点（x，y，z）直接计算<strong>纹理颜色</strong>。</li>
+<li><strong>纹理图案的光照细节</strong>设定通常与场景中<strong>光照方向无关</strong>。</li>
+<li><strong>凹凸映射</strong>通过修改物体表面<strong>法向量</strong>来影响表面阴影的计算。</li>
+</ol>
+<h2 id="第五章-关节动画"><a href="#第五章-关节动画" class="headerlink" title="第五章 关节动画"></a>第五章 关节动画</h2><ol>
+<li><strong>关节动画</strong>主要考虑的是<strong>运动学</strong>的控制。</li>
+<li><strong>关节链结构的自由度</strong>：状态空间的维度，<strong>完全确定</strong>关节链<strong>结构状态</strong>所需的<strong>独立变量个数</strong>。</li>
+<li>动画师通过直接指定关节处的<strong>关节运动参数</strong>来控制物体的运动。</li>
+<li><strong>逆向动力学</strong>是一种<strong>目标驱动</strong>技术，即研究如何从<strong>末端位置</strong>计算<strong>状态向量的位置</strong>。</li>
+<li><strong>牛顿迭代法</strong>收敛速度<strong>很快</strong>，但<strong>不保证</strong>能求得<strong>最优解</strong>，只是计算方程得一个<strong>近似值</strong>，关键在于求方程的<strong>导数</strong>。</li>
+<li><strong>单个关节链结构</strong>通常不足以描述人体或动物等角色的运动。</li>
+</ol>
+<h2 id="第六章-粒子系统"><a href="#第六章-粒子系统" class="headerlink" title="第六章 粒子系统"></a>第六章 粒子系统</h2><ol>
+<li><strong>粒子系统</strong>在外观上呈现出一定的<strong>不规则性、不确定性和随机性</strong>，同一物体在<strong>不同时刻</strong>会具有<strong>不同的形状</strong>，甚至差别很大。</li>
+<li><strong>粒子系统</strong>可看作由<strong>大量</strong>的<strong>微小物质</strong>组成的系统，这些粒子<strong>按一定规则运动</strong>。</li>
+<li>与粒子有关的<strong>每一个参数</strong>均将受到一个<strong>随机过程</strong>的控制。</li>
+</ol>
+<h2 id="第七章-弹性网络"><a href="#第七章-弹性网络" class="headerlink" title="第七章 弹性网络"></a>第七章 弹性网络</h2><ol>
+<li>对象上的<strong>两个点</strong>的<strong>相对距离不固定</strong>，但是相对距离变化满足<strong>一定的约束条件</strong>。</li>
+</ol>
+<h2 id="第八章-Advanced-Character-Physics"><a href="#第八章-Advanced-Character-Physics" class="headerlink" title="第八章 Advanced Character Physics"></a>第八章 Advanced Character Physics</h2><ol>
+<li>韦尔莱法积分<strong>隐式</strong>处理了物体的<strong>速度和加速度</strong>。</li>
+<li><strong>松弛法</strong>是一种<strong>迭代方法</strong>。</li>
+</ol>
+<h2 id="第九章-碰撞检测"><a href="#第九章-碰撞检测" class="headerlink" title="第九章 碰撞检测"></a>第九章 碰撞检测</h2><ol>
+<li>通过<strong>回弹系数</strong>衡量非弹性碰撞程度。</li>
+<li><strong>OBB</strong>是指在<strong>任意方向</strong>能<strong>最小化空白区域</strong>的包围盒，<strong>尽可能</strong>地包围物体。</li>
+<li><strong>OBB</strong>技术已经广泛用于<strong>光线追踪和碰撞检测</strong>中。</li>
+<li><strong>OBB</strong>比<strong>AABB</strong>更<strong>精确且稳定</strong>。</li>
+</ol>
+<h2 id="第十章-水面模拟"><a href="#第十章-水面模拟" class="headerlink" title="第十章 水面模拟"></a>第十章 水面模拟</h2><ol>
+<li><strong>定向波浪</strong>适用于<strong>大面积水体</strong>，<strong>圆形波浪</strong>适用于<strong>小的水池</strong>。</li>
+<li>通常水面运动看作<strong>一系列正弦波的叠加</strong>。</li>
+<li>Gerstner Waves模拟时，应避免将<strong><script type="math/tex">Q_i</script></strong>设置过大，否则会在<strong>波峰顶部</strong>产生环。</li>
+</ol>
+<h2 id="第十一章-群组动画"><a href="#第十一章-群组动画" class="headerlink" title="第十一章 群组动画"></a>第十一章 群组动画</h2><ol>
+<li><strong>FLOCK</strong>是呈现<strong>对齐、非碰撞、聚集运动</strong>现像的一组物体</li>
+<li>聚集的群体运动依赖于<strong>有限的，局部</strong>的视野</li>
+</ol>
+<h1 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h1><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><ol>
+<li>欧拉方程</li>
+</ol>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>1.无</p>
+<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><ol>
+<li><strong>前向差分法计算路径长度与路径方程参数</strong></li>
+<li>正弦片段+直线？</li>
+<li><strong>均匀加速度  — 给定最大速度和加速减速时刻来求每一段的速度、位移方程</strong></li>
+</ol>
+<h2 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h2><ol>
+<li>光照强度计算 ？ 有点难</li>
+<li><strong>光线-球面求交</strong></li>
+</ol>
+<h2 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2><ol>
+<li>计算雅可比行列式</li>
+<li><strong>计算末端影响器位置</strong></li>
+<li><strong>根据末端影响器位置计算夹角</strong></li>
+<li>牛顿迭代法求角度</li>
+</ol>
+<h2 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h2><p>无</p>
+<h2 id="第七章"><a href="#第七章" class="headerlink" title="第七章"></a>第七章</h2><ol>
+<li>计算弹性系数k？</li>
+<li>计算合力？</li>
+</ol>
+<h2 id="第八章"><a href="#第八章" class="headerlink" title="第八章"></a>第八章</h2><ol>
+<li><strong>欧拉方程</strong></li>
+<li><strong>改进欧拉算法</strong></li>
+<li><strong>韦尔莱法积分</strong></li>
+</ol>
+<h2 id="第九章"><a href="#第九章" class="headerlink" title="第九章"></a>第九章</h2><ol>
+<li>求碰撞时刻？</li>
+<li><strong>求碰撞后的速度</strong></li>
+<li><strong>碰撞位置</strong></li>
+</ol>
+<h2 id="第十章"><a href="#第十章" class="headerlink" title="第十章"></a>第十章</h2><ol>
+<li>求正弦波或幂指数表达式？ 给定S,L</li>
+</ol>
+<h1 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h1><h2 id="第一章-1"><a href="#第一章-1" class="headerlink" title="第一章"></a>第一章</h2><ol>
+<li>欧拉方程证明 — 极限</li>
+</ol>
+<h2 id="第二章-1"><a href="#第二章-1" class="headerlink" title="第二章"></a>第二章</h2><p>1.无</p>
+<h2 id="第三章-1"><a href="#第三章-1" class="headerlink" title="第三章"></a>第三章</h2><ol>
+<li>正弦表达式</li>
+<li>正弦片段+直线 每段参数表达式</li>
+<li><strong>均匀加速度  — 给定最大速度和加速减速时刻来求每一段的速度、位移方程</strong></li>
+<li><strong>网格变体算法公式</strong></li>
+</ol>
+<h2 id="第四章-1"><a href="#第四章-1" class="headerlink" title="第四章"></a>第四章</h2><ol>
+<li>反射向量推导</li>
+<li>光线与多面体求交s推导</li>
+<li>空间分割法s推导？</li>
+</ol>
+<h2 id="第五章-1"><a href="#第五章-1" class="headerlink" title="第五章"></a>第五章</h2><ol>
+<li><strong>雅可比行列式</strong></li>
+<li><strong>末端影响器位置推导</strong></li>
+<li><strong>根据末端影响器位置计算夹角</strong></li>
+<li><strong>牛顿迭代法求角度</strong></li>
+</ol>
+<h2 id="第六章-1"><a href="#第六章-1" class="headerlink" title="第六章"></a>第六章</h2><p>无</p>
+<h2 id="第七章-1"><a href="#第七章-1" class="headerlink" title="第七章"></a>第七章</h2><ol>
+<li>推导合力？</li>
+</ol>
+<h2 id="第八章-1"><a href="#第八章-1" class="headerlink" title="第八章"></a>第八章</h2><ol>
+<li>推导改进欧拉方程</li>
+<li>推导欧拉方程误差</li>
+<li>推导韦尔莱法积分</li>
+<li>证明松弛法的有效性</li>
+</ol>
+<h2 id="第九章-1"><a href="#第九章-1" class="headerlink" title="第九章"></a>第九章</h2><ol>
+<li>推导碰撞后的速度</li>
+<li>推导碰撞时刻</li>
+</ol>
+<h2 id="第十章-1"><a href="#第十章-1" class="headerlink" title="第十章"></a>第十章</h2><ol>
+<li><strong>推导偏导数</strong></li>
+<li>推导正弦波函数</li>
+</ol>
+<h1 id="问答"><a href="#问答" class="headerlink" title="问答"></a>问答</h1><h2 id="第一章-2"><a href="#第一章-2" class="headerlink" title="第一章"></a>第一章</h2><ol>
+<li><strong>物理动画分类</strong></li>
+<li>刚体、柔体定义</li>
+<li>牛顿运动定理</li>
+<li>运动模糊流程</li>
+</ol>
+<h2 id="第二章-2"><a href="#第二章-2" class="headerlink" title="第二章"></a>第二章</h2><p>1.八叉树实现流程</p>
+<h2 id="第三章-2"><a href="#第三章-2" class="headerlink" title="第三章"></a>第三章</h2><ol>
+<li>前向差分优缺点及解决方案</li>
+<li>变形流程</li>
+<li>基于网格的图像变体算法流程</li>
+</ol>
+<h2 id="第四章-2"><a href="#第四章-2" class="headerlink" title="第四章"></a>第四章</h2><ol>
+<li>局部光照和全局光照的比较</li>
+<li>光线跟踪算法及光线跟踪树构造停止条件</li>
+<li>空间分割法算法流程</li>
+</ol>
+<h2 id="第五章-2"><a href="#第五章-2" class="headerlink" title="第五章"></a>第五章</h2><ol>
+<li>逆向动力学缺点和改进</li>
+</ol>
+<h2 id="第六章-2"><a href="#第六章-2" class="headerlink" title="第六章"></a>第六章</h2><ol>
+<li>粒子系统特征</li>
+<li>粒子特性</li>
+<li>基本实现思路</li>
+</ol>
+<h2 id="第七章-2"><a href="#第七章-2" class="headerlink" title="第七章"></a>第七章</h2><ol>
+<li>弹性对象的实现</li>
+<li>弹簧-质量模型原理</li>
+</ol>
+<h2 id="第八章-2"><a href="#第八章-2" class="headerlink" title="第八章"></a>第八章</h2><ol>
+<li>韦尔莱法积分优点</li>
+</ol>
+<h2 id="第九章-2"><a href="#第九章-2" class="headerlink" title="第九章"></a>第九章</h2><ol>
+<li>碰撞检测解决问题</li>
+<li>球-平面碰撞检测流程</li>
+<li>球球碰撞检测流程</li>
+<li>构造层次结构碰撞检测流程</li>
+<li><strong>SAT中的定理与判定流程</strong></li>
+</ol>
+<h2 id="第十章-2"><a href="#第十章-2" class="headerlink" title="第十章"></a>第十章</h2><ol>
+<li>水面模拟步骤</li>
+</ol>
+<h2 id="第十一章"><a href="#第十一章" class="headerlink" title="第十一章"></a>第十一章</h2><ol>
+<li>群组定义</li>
+<li>群体运动特征</li>
+<li>三种层次的行为</li>
+<li><strong>三大原则</strong></li>
+<li>排斥力场的优缺点及产生的问题</li>
+<li>FLOCKING的整体控制</li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/27/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-%E7%AE%80%E4%BB%8B/" class="archive-article-date">
-  	<time datetime="2021-04-27T05:20:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/27/%E8%AF%91-GLUT%E6%95%99%E7%A8%8B-pyopengl%E5%AE%9E%E7%8E%B0-%E7%AE%80%E4%BB%8B/">译-GLUT教程-pyopengl实现-简介</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">GLUT</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">图形与动画</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/pyopengl//" class="article-tag-list-link color4">pyopengl</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/pyopengl/GLUT//" class="article-tag-list-link color5">GLUT</a>
+        			<a href="/categories/大学课程//" class="article-tag-list-link color5">大学课程</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/06/01/%E5%9B%BE%E5%BD%A2%E4%B8%8E%E5%8A%A8%E7%94%BB-%E4%BA%8C-%E5%A4%8D%E4%B9%A0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/26/CSS/" class="archive-article-date">
-  	<time datetime="2021-04-26T12:18:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-26</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/05/24/windows%E4%B8%8Bc%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">windows下c语言实现多线程矩阵乘法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/26/CSS/">CSS</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/CSS//" class="article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD"><span class="toc-number">1.</span> <span class="toc-text">判断</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E7%89%A9%E7%90%86%E5%8A%A8%E7%94%BB"><span class="toc-number">1.1.</span> <span class="toc-text">第一章 物理动画</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E4%B8%89%E7%BB%B4%E5%AF%B9%E8%B1%A1%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.2.</span> <span class="toc-text">第二章 三维对象表示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%85%B3%E9%94%AE%E5%B8%A7%E5%8A%A8%E7%94%BB"><span class="toc-number">1.3.</span> <span class="toc-text">第三章 关键帧动画</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E5%85%89%E7%85%A7%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.4.</span> <span class="toc-text">第四章 光照模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E5%85%B3%E8%8A%82%E5%8A%A8%E7%94%BB"><span class="toc-number">1.5.</span> <span class="toc-text">第五章 关节动画</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E7%B2%92%E5%AD%90%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.6.</span> <span class="toc-text">第六章 粒子系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%BC%B9%E6%80%A7%E7%BD%91%E7%BB%9C"><span class="toc-number">1.7.</span> <span class="toc-text">第七章 弹性网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-Advanced-Character-Physics"><span class="toc-number">1.8.</span> <span class="toc-text">第八章 Advanced Character Physics</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-%E7%A2%B0%E6%92%9E%E6%A3%80%E6%B5%8B"><span class="toc-number">1.9.</span> <span class="toc-text">第九章 碰撞检测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E6%B0%B4%E9%9D%A2%E6%A8%A1%E6%8B%9F"><span class="toc-number">1.10.</span> <span class="toc-text">第十章 水面模拟</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E7%BE%A4%E7%BB%84%E5%8A%A8%E7%94%BB"><span class="toc-number">1.11.</span> <span class="toc-text">第十一章 群组动画</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97"><span class="toc-number">2.</span> <span class="toc-text">计算</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="toc-number">2.1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="toc-number">2.2.</span> <span class="toc-text">第二章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0"><span class="toc-number">2.3.</span> <span class="toc-text">第三章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0"><span class="toc-number">2.4.</span> <span class="toc-text">第四章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0"><span class="toc-number">2.5.</span> <span class="toc-text">第五章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0"><span class="toc-number">2.6.</span> <span class="toc-text">第六章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0"><span class="toc-number">2.7.</span> <span class="toc-text">第七章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0"><span class="toc-number">2.8.</span> <span class="toc-text">第八章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0"><span class="toc-number">2.9.</span> <span class="toc-text">第九章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0"><span class="toc-number">2.10.</span> <span class="toc-text">第十章</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%81%E6%98%8E"><span class="toc-number">3.</span> <span class="toc-text">证明</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-1"><span class="toc-number">3.1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-1"><span class="toc-number">3.2.</span> <span class="toc-text">第二章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-1"><span class="toc-number">3.3.</span> <span class="toc-text">第三章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-1"><span class="toc-number">3.4.</span> <span class="toc-text">第四章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-1"><span class="toc-number">3.5.</span> <span class="toc-text">第五章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-1"><span class="toc-number">3.6.</span> <span class="toc-text">第六章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-1"><span class="toc-number">3.7.</span> <span class="toc-text">第七章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-1"><span class="toc-number">3.8.</span> <span class="toc-text">第八章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-1"><span class="toc-number">3.9.</span> <span class="toc-text">第九章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-1"><span class="toc-number">3.10.</span> <span class="toc-text">第十章</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%97%AE%E7%AD%94"><span class="toc-number">4.</span> <span class="toc-text">问答</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-2"><span class="toc-number">4.1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-2"><span class="toc-number">4.2.</span> <span class="toc-text">第二章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-2"><span class="toc-number">4.3.</span> <span class="toc-text">第三章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-2"><span class="toc-number">4.4.</span> <span class="toc-text">第四章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-2"><span class="toc-number">4.5.</span> <span class="toc-text">第五章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-2"><span class="toc-number">4.6.</span> <span class="toc-text">第六章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-2"><span class="toc-number">4.7.</span> <span class="toc-text">第七章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-2"><span class="toc-number">4.8.</span> <span class="toc-text">第八章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-2"><span class="toc-number">4.9.</span> <span class="toc-text">第九章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E7%AB%A0-2"><span class="toc-number">4.10.</span> <span class="toc-text">第十章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0"><span class="toc-number">4.11.</span> <span class="toc-text">第十一章</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/26/HTML/" class="archive-article-date">
-  	<time datetime="2021-04-26T12:18:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/26/HTML/">HTML</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/HTML//" class="article-tag-list-link color5">HTML</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/26/Javascript/" class="archive-article-date">
-  	<time datetime="2021-04-26T12:17:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/26/Javascript/">Javascript</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Javascript//" class="article-tag-list-link color1">Javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E4%B8%80)/" class="archive-article-date">
-  	<time datetime="2021-04-26T12:12:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/26/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0(%E4%B8%80)/">微信小程序学习(一)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">微信小程序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/微信小程序//" class="article-tag-list-link color1">微信小程序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/26/Typora%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2021-04-26T08:25:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/26/Typora%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Typora学习笔记</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Typora</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Typora//" class="article-tag-list-link color2">Typora</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/26/First-Blog/" class="archive-article-date">
-  	<time datetime="2021-04-26T06:59:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/26/First-Blog/">First Blog</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2021/">&amp;laquo; Prev</a><a class="page-number" href="/archives/2021/">1</a><span class="page-number current">2</span>
-    </nav>
+  
+
+  
+
   
 
 
@@ -533,8 +587,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
